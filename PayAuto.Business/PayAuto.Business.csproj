@@ -41,7 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExternalApi\IStateApiService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\PayAutoGeneralService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PayAuto.Domain\PayAuto.Domain.csproj">
+      <Project>{9631932f-85d2-4af7-af41-5888aa1d9033}</Project>
+      <Name>PayAuto.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

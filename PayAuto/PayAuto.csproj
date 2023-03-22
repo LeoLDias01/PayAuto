@@ -104,5 +104,15 @@
   <ItemGroup>
     <None Include="Resources\logout256_24927.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PayAuto.Business\PayAuto.Business.csproj">
+      <Project>{704b9ca4-20f7-4b81-b067-9f6784ce58e1}</Project>
+      <Name>PayAuto.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PayAuto.Domain\PayAuto.Domain.csproj">
+      <Project>{9631932f-85d2-4af7-af41-5888aa1d9033}</Project>
+      <Name>PayAuto.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

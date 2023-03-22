@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSimpleSearch));
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnSimpleSearch = new System.Windows.Forms.Button();
@@ -217,6 +218,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblSaudation);
             this.Controls.Add(this.comboBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSimpleSearch";
             this.Text = "frmSimpleSearch";
             this.Load += new System.EventHandler(this.frmSimpleSearch_Load);

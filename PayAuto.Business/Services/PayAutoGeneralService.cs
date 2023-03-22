@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PayAuto.Business.ExternalApi;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

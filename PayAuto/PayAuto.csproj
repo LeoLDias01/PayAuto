@@ -60,6 +60,12 @@
     <Compile Include="Screens\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\frmSimpleSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmSimpleSearch.Designer.cs">
+      <DependentUpon>frmSimpleSearch.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmSimpleSearch.resx">
+      <DependentUpon>frmSimpleSearch.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

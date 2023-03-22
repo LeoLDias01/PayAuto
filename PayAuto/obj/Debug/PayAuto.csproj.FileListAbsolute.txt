@@ -1,0 +1,8 @@
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.csproj.AssemblyReference.cache
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.csproj.SuggestedBindingRedirects.cache
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.Properties.Resources.resources
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.Screens.frmLoading.resources
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.Screens.frmMenu.resources
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.Screens.frmSimpleSearch.resources
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.csproj.GenerateResource.cache
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.csproj.CoreCompileInputs.cache

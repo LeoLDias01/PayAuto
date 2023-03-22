@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="Refit, Version=6.3.0.0, Culture=neutral, PublicKeyToken=2f9b1262776509f5, processorArchitecture=MSIL">
       <HintPath>..\PayAuto\packages\Refit.6.3.2\lib\net461\Refit.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -116,6 +117,7 @@
     <Compile Include="ExternalApi\IStateApiService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\PayAutoGeneralService.cs" />
+    <Compile Include="Services\PayAutoSPService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PayAuto.Domain\PayAuto.Domain.csproj">
@@ -123,7 +125,9 @@
       <Name>PayAuto.Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />

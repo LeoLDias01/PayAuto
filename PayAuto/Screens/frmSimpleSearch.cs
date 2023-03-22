@@ -21,5 +21,17 @@ namespace PayAuto.Screens
         {
 
         }
-    }
+
+        private void btnSimpleSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ValidaCampos() 
+        {
+            Task.Run(() =>
+            {
+
+
+            });
+        }
 }

@@ -80,6 +80,7 @@
             this.btnSimpleSearch.TabIndex = 21;
             this.btnSimpleSearch.Text = "Buscar";
             this.btnSimpleSearch.UseVisualStyleBackColor = false;
+            this.btnSimpleSearch.Click += new System.EventHandler(this.btnSimpleSearch_Click);
             // 
             // textBox3
             // 

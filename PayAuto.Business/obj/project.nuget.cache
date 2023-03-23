@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "haDm6tjUKdiTIIdOGwdMBvb53uoMxXBVQ45D8zO5xUhAiXPKrIuLtlfGQnq93oIJcX5Jk0aypQbJSC58BRR9nQ==",
+  "dgSpecHash": "dljSFp9uZQhEmXeKmtaaV5Hj2GG7I962ZUbX2bFjtqAEYXHbia6Bl8gJwQZOji99kIAkYC88idDUQeqYdUIqiQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\leonardoleal\\Source\\Repos\\PayAuto\\PayAuto.Business\\PayAuto.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leonardoleal.CONCILIG\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\leonardoleal.CONCILIG\\.nuget\\packages\\refit\\6.3.2\\refit.6.3.2.nupkg.sha512",
+    "C:\\Users\\leonardoleal.CONCILIG\\.nuget\\packages\\selenium.webdriver\\4.8.1\\selenium.webdriver.4.8.1.nupkg.sha512",
     "C:\\Users\\leonardoleal.CONCILIG\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\leonardoleal.CONCILIG\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\leonardoleal.CONCILIG\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

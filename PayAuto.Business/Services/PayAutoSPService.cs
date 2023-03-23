@@ -1,32 +1,66 @@
-﻿using System;
+﻿using PayAuto.Selenium.Domain;
+using PayAuto.Domain.Models;
+using PayAuto.Selenium.Infra;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PayAuto.Business.Services
 {
     public class PayAutoSPService
     {
+        public Chrome chrome;
+        public Firefox firefox;
         public void Start(string link)
         {
             try
             {
-             /*   _service.AtualizaStatus(idParcela, Convert.ToInt32(Status.Processando));
                 // Define o Chrome como navegador
-                _nav = new Chrome(Interface.OnlyBrowser, isAdministrator: false);
+                chrome = new Chrome(InterfaceType.NoUserInterface, isAdministrator: false);
 
                 // Manter a janela maximizada
-                _nav.Driver.Manage().Window.Maximize();
+                chrome.Driver.Manage().Window.Maximize();
 
                 // Entra no Link
-                _nav.Navegacao(link);*/
+                chrome.Navegacao(link);
             }
             catch
             {
-               
+                try 
+                {
+                    // Define o Chrome como navegador
+                    firefox = new Firefox(InterfaceType.NoUserInterface, isAdministrator: false);
+
+                    // Manter a janela maximizada
+                    firefox.Driver.Manage().Window.Maximize();
+
+                    // Entra no Link
+                    firefox.Navegacao(link);
+
+                }
+                catch
+                {
+                    try
+                    {
+                        //tenta no explorer
+                        MessageBox.Show("Nenhum dos browsers foi encontrado!");
+                    }
+                    catch 
+                    {
+                        MessageBox.Show("Nenhum dos browsers foi encontrado!");
+                    }
+                }
             }
         }
-
+        public void Logon() 
+        { 
+        
+        
+        
+        }
     }
 }

@@ -43,6 +43,21 @@
           "buildTransitive/netstandard2.0/refit.targets": {}
         }
       },
+      "Selenium.WebDriver/4.8.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing"
+        ],
+        "compile": {
+          "lib/net48/WebDriver.dll": {}
+        },
+        "runtime": {
+          "lib/net48/WebDriver.dll": {}
+        },
+        "build": {
+          "build/Selenium.WebDriver.targets": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -366,6 +381,9 @@
       },
       "PayAuto.Domain/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "PayAuto.Selenium": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PayAuto.Domain.dll": {}
         },
@@ -423,6 +441,21 @@
         "build": {
           "buildTransitive/netstandard2.0/refit.props": {},
           "buildTransitive/netstandard2.0/refit.targets": {}
+        }
+      },
+      "Selenium.WebDriver/4.8.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing"
+        ],
+        "compile": {
+          "lib/net48/WebDriver.dll": {}
+        },
+        "runtime": {
+          "lib/net48/WebDriver.dll": {}
+        },
+        "build": {
+          "build/Selenium.WebDriver.targets": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -704,6 +737,9 @@
       },
       "PayAuto.Domain/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "PayAuto.Selenium": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PayAuto.Domain.dll": {}
         },
@@ -763,6 +799,21 @@
           "buildTransitive/netstandard2.0/refit.targets": {}
         }
       },
+      "Selenium.WebDriver/4.8.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing"
+        ],
+        "compile": {
+          "lib/net48/WebDriver.dll": {}
+        },
+        "runtime": {
+          "lib/net48/WebDriver.dll": {}
+        },
+        "build": {
+          "build/Selenium.WebDriver.targets": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1042,6 +1093,9 @@
       },
       "PayAuto.Domain/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "PayAuto.Selenium": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PayAuto.Domain.dll": {}
         },
@@ -1101,6 +1155,21 @@
           "buildTransitive/netstandard2.0/refit.targets": {}
         }
       },
+      "Selenium.WebDriver/4.8.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing"
+        ],
+        "compile": {
+          "lib/net48/WebDriver.dll": {}
+        },
+        "runtime": {
+          "lib/net48/WebDriver.dll": {}
+        },
+        "build": {
+          "build/Selenium.WebDriver.targets": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1380,6 +1449,9 @@
       },
       "PayAuto.Domain/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "PayAuto.Selenium": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PayAuto.Domain.dll": {}
         },
@@ -1445,6 +1517,30 @@
         "refit.6.3.2.nupkg.sha512",
         "refit.nuspec",
         "refit_logo.png"
+      ]
+    },
+    "Selenium.WebDriver/4.8.1": {
+      "sha512": "h4H7pEyr41Xf+IgmhNqrbF3I24SV02x2G1INS82pycNltg1q15/qVV/aRKu/MbMFKtqy1mVoNEE/4/p7T/4Ngw==",
+      "type": "package",
+      "path": "selenium.webdriver/4.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Selenium.WebDriver.targets",
+        "images/icon.png",
+        "lib/net45/WebDriver.dll",
+        "lib/net46/WebDriver.dll",
+        "lib/net47/WebDriver.dll",
+        "lib/net48/WebDriver.dll",
+        "lib/net5.0/WebDriver.dll",
+        "lib/net6.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.1/WebDriver.dll",
+        "manager/linux/selenium-manager",
+        "manager/macos/selenium-manager",
+        "manager/windows/selenium-manager.exe",
+        "selenium.webdriver.4.8.1.nupkg.sha512",
+        "selenium.webdriver.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -2159,6 +2255,7 @@
       "PayAuto.Domain >= 1.0.0",
       "PayAuto.Selenium >= 1.0.0",
       "Refit >= 6.3.2",
+      "Selenium.WebDriver >= 4.8.1",
       "System.Buffers >= 4.5.1",
       "System.IO >= 4.3.0",
       "System.Memory >= 4.5.4",
@@ -2229,6 +2326,10 @@
           "Refit": {
             "target": "Package",
             "version": "[6.3.2, )"
+          },
+          "Selenium.WebDriver": {
+            "target": "Package",
+            "version": "[4.8.1, )"
           },
           "System.Buffers": {
             "target": "Package",

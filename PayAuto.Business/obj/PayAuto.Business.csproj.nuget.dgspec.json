@@ -53,6 +53,10 @@
               "target": "Package",
               "version": "[6.3.2, )"
             },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            },
             "System.Buffers": {
               "target": "Package",
               "version": "[4.5.1, )"
@@ -139,7 +143,11 @@
         "projectPath": "C:\\Users\\leonardoleal\\Source\\Repos\\PayAuto\\PayAuto.Domain\\PayAuto.Domain.csproj",
         "frameworks": {
           "net481": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\leonardoleal\\Source\\Repos\\PayAuto\\PayAuto.Selenium\\PayAuto.Selenium.csproj": {
+                "projectPath": "C:\\Users\\leonardoleal\\Source\\Repos\\PayAuto\\PayAuto.Selenium\\PayAuto.Selenium.csproj"
+              }
+            }
           }
         }
       },

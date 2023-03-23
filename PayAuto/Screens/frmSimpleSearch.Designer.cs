@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSimpleSearch));
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnSimpleSearch = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtChassi = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPlaca = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRenavam = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblSaudation = new System.Windows.Forms.Label();
             this.cmbUf = new System.Windows.Forms.ComboBox();
@@ -45,14 +45,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(95, 96);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(214, 20);
-            this.textBox4.TabIndex = 23;
+            this.txtEmail.Location = new System.Drawing.Point(95, 96);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(214, 20);
+            this.txtEmail.TabIndex = 23;
             // 
             // label4
             // 
@@ -82,14 +82,14 @@
             this.btnSimpleSearch.UseVisualStyleBackColor = false;
             this.btnSimpleSearch.Click += new System.EventHandler(this.btnSimpleSearch_Click);
             // 
-            // textBox3
+            // txtChassi
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtChassi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(95, 211);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(214, 20);
-            this.textBox3.TabIndex = 20;
+            this.txtChassi.Location = new System.Drawing.Point(95, 211);
+            this.txtChassi.Name = "txtChassi";
+            this.txtChassi.Size = new System.Drawing.Size(214, 20);
+            this.txtChassi.TabIndex = 20;
             // 
             // label3
             // 
@@ -102,14 +102,14 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Chassi";
             // 
-            // textBox2
+            // txtPlaca
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtPlaca.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(95, 171);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 20);
-            this.textBox2.TabIndex = 18;
+            this.txtPlaca.Location = new System.Drawing.Point(95, 171);
+            this.txtPlaca.Name = "txtPlaca";
+            this.txtPlaca.Size = new System.Drawing.Size(214, 20);
+            this.txtPlaca.TabIndex = 18;
             // 
             // label2
             // 
@@ -122,14 +122,14 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Placa";
             // 
-            // textBox1
+            // txtRenavam
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtRenavam.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(95, 134);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 20);
-            this.textBox1.TabIndex = 16;
+            this.txtRenavam.Location = new System.Drawing.Point(95, 134);
+            this.txtRenavam.Name = "txtRenavam";
+            this.txtRenavam.Size = new System.Drawing.Size(214, 20);
+            this.txtRenavam.TabIndex = 16;
             // 
             // label1
             // 
@@ -208,14 +208,14 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnSimpleSearch);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtChassi);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPlaca);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRenavam);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblSaudation);
             this.Controls.Add(this.cmbUf);
@@ -230,14 +230,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnSimpleSearch;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtChassi;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRenavam;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblSaudation;
         private System.Windows.Forms.ComboBox cmbUf;

@@ -40,3 +40,7 @@ C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\bin\Debug\System.Runtime.Comp
 C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.csproj.CopyComplete
 C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.exe
 C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.pdb
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\bin\Debug\PayAuto.Selenium.dll
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\bin\Debug\WebDriver.dll
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\bin\Debug\WebDriver.Support.dll
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto\bin\Debug\PayAuto.Selenium.pdb

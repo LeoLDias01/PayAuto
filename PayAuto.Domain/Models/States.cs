@@ -8,6 +8,18 @@ using System.Threading.Tasks;
 
 namespace PayAuto.Domain.Models
 {
+    public class StatesResponse
+    {
+        [Description("Results count")]
+        [JsonPropertyName("totalResultsCount")]
+        public int ResultsCount { get; set; }
+
+        [Description("Geonames")]
+        [JsonPropertyName("geonames")]
+        public States StatesList { get; set; }
+    }
+
+
     public class States
     {
         [Description("State Id")]
@@ -15,9 +27,11 @@ namespace PayAuto.Domain.Models
         public int Id { get; set; }
 
         [Description("State Name")]
-        [JsonPropertyName("adminCodes1")]
-        public Uf Name { get; set; }
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
     }
+
+    
     public class Uf
     {
         [Description("State Abreviation")]

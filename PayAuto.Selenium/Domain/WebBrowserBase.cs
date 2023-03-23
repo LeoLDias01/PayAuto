@@ -1,5 +1,10 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using PayAuto.Selenium.Infra;
+using PayAuto.Selenium.Model;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
@@ -9,9 +14,8 @@ using System.Threading.Tasks;
 
 namespace PayAuto.Selenium.Domain
 {
-    public class WebBrowserBase
+    public class WebBrowserBase : IDisposable, IWebBrowserBase
     {
-
         public IWebDriver Driver { get; set; }
         public Screenshot Screenshot => (Driver as ITakesScreenshot).GetScreenshot();
         public IJavaScriptExecutor JavaScriptExecutor => Driver as IJavaScriptExecutor;
@@ -231,7 +235,7 @@ namespace PayAuto.Selenium.Domain
                     new DropDownItem()
                     {
                         ItemDescription = selectItem.Text,
-                        ItemValue = selectItem.GetProperty("value")
+                        ItemValue = selectItem.GetDomProperty("value")
                     };
             }
             catch (Exception)
@@ -312,7 +316,7 @@ namespace PayAuto.Selenium.Domain
         {
             WaitUntil(b => b.ReturnJScript("document.readyState").Equals("complete"));
 
-            return this;
+            return (IWebBrowserBase)this;
         }
 
         public virtual IWebBrowserBase WaitUntil(Expression<Func<IWebBrowserBase, bool>> predicate, int timeout = 30)
@@ -401,4 +405,4 @@ namespace PayAuto.Selenium.Domain
         }
     }
 }
-}
+

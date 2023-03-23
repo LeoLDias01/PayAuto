@@ -12,7 +12,7 @@ namespace PayAuto.Business.Services
         {
             try
             {
-                _service.AtualizaStatus(idParcela, Convert.ToInt32(Status.Processando));
+             /*   _service.AtualizaStatus(idParcela, Convert.ToInt32(Status.Processando));
                 // Define o Chrome como navegador
                 _nav = new Chrome(Interface.OnlyBrowser, isAdministrator: false);
 
@@ -20,7 +20,7 @@ namespace PayAuto.Business.Services
                 _nav.Driver.Manage().Window.Maximize();
 
                 // Entra no Link
-                _nav.Navegacao(link);
+                _nav.Navegacao(link);*/
             }
             catch
             {

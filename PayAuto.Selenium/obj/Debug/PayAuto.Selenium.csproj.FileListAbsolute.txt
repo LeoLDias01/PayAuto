@@ -1,0 +1,13 @@
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\PayAuto.Selenium.dll
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\PayAuto.Selenium.pdb
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\WebDriver.dll
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\WebDriver.Support.dll
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.csproj.AssemblyReference.cache
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.csproj.CoreCompileInputs.cache
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.csproj.CopyComplete
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.dll
+C:\Users\leonardoleal\Source\Repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.pdb

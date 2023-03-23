@@ -26,7 +26,7 @@ namespace PayAuto.Screens
         {
 
         }
-        private void ValidaCampos() 
+        private void ValidaCampos()
         {
             Task.Run(() =>
             {
@@ -34,4 +34,5 @@ namespace PayAuto.Screens
 
             });
         }
+    }
 }

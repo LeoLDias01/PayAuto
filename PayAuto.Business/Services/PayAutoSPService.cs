@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PayAuto.Business.Services
 {
@@ -17,28 +18,18 @@ namespace PayAuto.Business.Services
         public Firefox firefox;
         public void Start(string link)
         {
+            chrome = new Chrome(InterfaceType.OnlyBrowser, isAdministrator: false);
+            firefox = new Firefox(InterfaceType.OnlyBrowser, isAdministrator: false);
             try
             {
-                // Define o Chrome como navegador
-                chrome = new Chrome(InterfaceType.NoUserInterface, isAdministrator: false);
-
-                // Manter a janela maximizada
                 chrome.Driver.Manage().Window.Maximize();
-
-                // Entra no Link
                 chrome.Navegacao(link);
             }
             catch
             {
                 try 
                 {
-                    // Define o Chrome como navegador
-                    firefox = new Firefox(InterfaceType.NoUserInterface, isAdministrator: false);
-
-                    // Manter a janela maximizada
                     firefox.Driver.Manage().Window.Maximize();
-
-                    // Entra no Link
                     firefox.Navegacao(link);
 
                 }
@@ -56,11 +47,20 @@ namespace PayAuto.Business.Services
                 }
             }
         }
+        public void InsereDadosBusca(string renavam, string placa)
+        {
+            try
+            {
+                chrome.LoginSp(renavam.Trim(), placa.Trim());
+            }
+            catch
+            {
+
+            }
+        }
         public void Logon() 
         { 
-        
-        
-        
+            chrome.GeraArquivoSp();
         }
     }
 }

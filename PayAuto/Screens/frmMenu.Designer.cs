@@ -130,6 +130,7 @@
             this.btnSimpleSearch.TabIndex = 1;
             this.btnSimpleSearch.Text = "Consulta Simples";
             this.btnSimpleSearch.UseVisualStyleBackColor = false;
+            this.btnSimpleSearch.Click += new System.EventHandler(this.btnSimpleSearch_Click);
             // 
             // frmMenu
             // 

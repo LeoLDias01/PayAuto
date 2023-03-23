@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PayAuto.Business.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace PayAuto.Screens
 {
     public partial class frmSimpleSearch : Form
     {
+        public PayAutoGeneralService generalService = new PayAutoGeneralService();
         public frmSimpleSearch()
         {
             InitializeComponent();
@@ -19,7 +21,11 @@ namespace PayAuto.Screens
 
         private void frmSimpleSearch_Load(object sender, EventArgs e)
         {
-
+            SearchStates();
+        }
+        public void SearchStates() 
+        {
+           generalService.ApiCall(ref cmbUf);
         }
 
         private void btnSimpleSearch_Click(object sender, EventArgs e)

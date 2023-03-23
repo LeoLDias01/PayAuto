@@ -35,5 +35,10 @@ namespace PayAuto.Screens
         {
             Application.Exit();
         }
+
+        private void btnSimpleSearch_Click(object sender, EventArgs e)
+        {
+            new frmSimpleSearch().ShowDialog();
+        }
     }
 }

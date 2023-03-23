@@ -5,18 +5,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PayAuto.Business.Services
 {
-    public  class PayAutoGeneralService
+    public class PayAutoGeneralService
     {
         public PayAutoSPService spService = new PayAutoSPService();
-        static async Task Main()
+        public void ApiCall(ref ComboBox comboUf)
         {
-            var stateClient = RestService.For<IStateApiService>("http://www.geonames.org/");
-            var State = await stateClient.GetStatesAsync();
+            var stateClient = RestService.For<IStateApiService>("http://www.geonames.org");
+            var state = stateClient.GetStatesAsync();
+
+            
+
         }
-        private void SimpleProcess(string link ="www.uol.com.br")
+        public void SimpleProcess(string link ="www.uol.com.br")
         {
             spService.Start(link);
         }

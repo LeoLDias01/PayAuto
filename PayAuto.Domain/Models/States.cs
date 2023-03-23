@@ -16,7 +16,7 @@ namespace PayAuto.Domain.Models
 
         [Description("State Name")]
         [JsonPropertyName("adminCodes1")]
-        public List<Uf> Name { get; set; }
+        public Uf Name { get; set; }
     }
     public class Uf
     {

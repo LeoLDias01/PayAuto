@@ -18,10 +18,11 @@ namespace PayAuto.Business.Services
             var state = stateClient.GetStatesAsync();
         
         }
-        public void SimpleProcess(string link)
+        public void SimpleProcess(string link, string renavam, string placa)
         {
             spService.Start(link);
+            spService.DataInsert(renavam, placa);
+            spService.Archives();
         }
-
     }
 }

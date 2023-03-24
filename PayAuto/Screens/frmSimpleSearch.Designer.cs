@@ -49,9 +49,10 @@
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Location = new System.Drawing.Point(95, 96);
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(16, 108);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(214, 20);
+            this.txtEmail.Size = new System.Drawing.Size(293, 23);
             this.txtEmail.TabIndex = 23;
             // 
             // label4
@@ -59,7 +60,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 96);
+            this.label4.Location = new System.Drawing.Point(12, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 20);
             this.label4.TabIndex = 22;
@@ -74,7 +75,7 @@
             this.btnSimpleSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnSimpleSearch.ForeColor = System.Drawing.Color.White;
             this.btnSimpleSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSimpleSearch.Location = new System.Drawing.Point(16, 270);
+            this.btnSimpleSearch.Location = new System.Drawing.Point(16, 357);
             this.btnSimpleSearch.Name = "btnSimpleSearch";
             this.btnSimpleSearch.Size = new System.Drawing.Size(293, 34);
             this.btnSimpleSearch.TabIndex = 21;
@@ -86,9 +87,10 @@
             // 
             this.txtChassi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtChassi.Location = new System.Drawing.Point(95, 211);
+            this.txtChassi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChassi.Location = new System.Drawing.Point(16, 289);
             this.txtChassi.Name = "txtChassi";
-            this.txtChassi.Size = new System.Drawing.Size(214, 20);
+            this.txtChassi.Size = new System.Drawing.Size(292, 23);
             this.txtChassi.TabIndex = 20;
             // 
             // label3
@@ -96,7 +98,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 211);
+            this.label3.Location = new System.Drawing.Point(12, 266);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 20);
             this.label3.TabIndex = 19;
@@ -106,9 +108,11 @@
             // 
             this.txtPlaca.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPlaca.Location = new System.Drawing.Point(95, 171);
+            this.txtPlaca.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtPlaca.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlaca.Location = new System.Drawing.Point(16, 229);
             this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(214, 20);
+            this.txtPlaca.Size = new System.Drawing.Size(292, 23);
             this.txtPlaca.TabIndex = 18;
             // 
             // label2
@@ -116,7 +120,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 171);
+            this.label2.Location = new System.Drawing.Point(12, 206);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 20);
             this.label2.TabIndex = 17;
@@ -126,17 +130,19 @@
             // 
             this.txtRenavam.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRenavam.Location = new System.Drawing.Point(95, 134);
+            this.txtRenavam.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRenavam.Location = new System.Drawing.Point(16, 171);
             this.txtRenavam.Name = "txtRenavam";
-            this.txtRenavam.Size = new System.Drawing.Size(214, 20);
+            this.txtRenavam.Size = new System.Drawing.Size(293, 23);
             this.txtRenavam.TabIndex = 16;
+            this.txtRenavam.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRenavam_KeyPress);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 134);
+            this.label1.Location = new System.Drawing.Point(12, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 20);
             this.label1.TabIndex = 15;
@@ -172,7 +178,7 @@
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(16, 320);
+            this.button1.Location = new System.Drawing.Point(16, 407);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(293, 34);
             this.button1.TabIndex = 24;
@@ -186,7 +192,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(9)))), ((int)(((byte)(47)))));
             this.panel1.Location = new System.Drawing.Point(16, 54);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(296, 10);
+            this.panel1.Size = new System.Drawing.Size(292, 10);
             this.panel1.TabIndex = 25;
             // 
             // panel2
@@ -204,7 +210,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(25)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(321, 379);
+            this.ClientSize = new System.Drawing.Size(321, 466);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);

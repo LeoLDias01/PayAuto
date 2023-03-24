@@ -19,7 +19,7 @@ namespace PayAuto.Business.Services
         public void Start(string link)
         {
             chrome = new Chrome(InterfaceType.OnlyBrowser, isAdministrator: false);
-            firefox = new Firefox(InterfaceType.OnlyBrowser, isAdministrator: false);
+           // firefox = new Firefox(InterfaceType.OnlyBrowser, isAdministrator: false);
             try
             {
                 chrome.Driver.Manage().Window.Maximize();
@@ -27,27 +27,10 @@ namespace PayAuto.Business.Services
             }
             catch
             {
-                try 
-                {
-                    firefox.Driver.Manage().Window.Maximize();
-                    firefox.Navegacao(link);
-
-                }
-                catch
-                {
-                    try
-                    {
-                        //tenta no explorer
-                        MessageBox.Show("Nenhum dos browsers foi encontrado!");
-                    }
-                    catch 
-                    {
-                        MessageBox.Show("Nenhum dos browsers foi encontrado!");
-                    }
-                }
+                MessageBox.Show("Nenhum dos browsers foi encontrado!");
             }
         }
-        public void InsereDadosBusca(string renavam, string placa)
+        public void DataInsert(string renavam, string placa)
         {
             try
             {
@@ -58,7 +41,7 @@ namespace PayAuto.Business.Services
 
             }
         }
-        public void Logon() 
+        public void Archives() 
         { 
             chrome.GeraArquivoSp();
         }

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PayAuto",
+    "\\PayAuto.Business",
+    "\\PayAuto.Business\\Services"
   ],
-  "SelectedNode": "\\PayAuto.sln",
+  "SelectedNode": "\\PayAuto.Business\\Services\\PayAutoSPService.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -138,5 +138,10 @@ namespace PayAuto.Screens
                 e.Handled = true;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            generalService.ApiCall(txtCep.Text);
+        }
     }
 }

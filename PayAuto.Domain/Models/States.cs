@@ -10,32 +10,31 @@ namespace PayAuto.Domain.Models
 {
     public class StatesResponse
     {
-        [Description("Results count")]
-        [JsonPropertyName("totalResultsCount")]
-        public int ResultsCount { get; set; }
+        [JsonPropertyName("cep")]
+        public string Cep { get; set; }
 
-        [Description("Geonames")]
-        [JsonPropertyName("geonames")]
-        public States StatesList { get; set; }
-    }
+        [JsonPropertyName("logradouro")]
+        public string Logradouro { get; set; }
 
+        [JsonPropertyName("complemento")]
+        public string Complemento { get; set; }
 
-    public class States
-    {
-        [Description("State Id")]
-        [JsonPropertyName("geonameId")]
-        public int Id { get; set; }
+        [JsonPropertyName("bairro")]
+        public string Bairro { get; set; }
 
-        [Description("State Name")]
-        [JsonPropertyName("name")]
-        public string Name { get; set; }
-    }
+        [JsonPropertyName("localidade")]
+        public string Localidade { get; set; }
 
-    
-    public class Uf
-    {
-        [Description("State Abreviation")]
-        [JsonPropertyName("ISO3166_2")]
-        public string Code { get; set; }
+        [JsonPropertyName("uf")]
+        public string Uf { get; set; }
+
+        [JsonPropertyName("unidade")]
+        public string Unidade { get; set; }
+
+        [JsonPropertyName("ibge")]
+        public string Ibge { get; set; }
+
+        [JsonPropertyName("gia")]
+        public string Gia { get; set; }
     }
 }

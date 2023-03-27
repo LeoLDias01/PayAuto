@@ -12,10 +12,10 @@ namespace PayAuto.Business.Services
     public class PayAutoGeneralService
     {
         public PayAutoSPService spService = new PayAutoSPService();
-        public void ApiCall(ref ComboBox comboUf)
+        public void ApiCall(string cep)
         {
-            var stateClient = RestService.For<IStateApiService>("http://www.geonames.org");
-            var state = stateClient.GetStatesAsync();
+            var stateClient = RestService.For<IStateApiService>("https://viacep.com.br");
+            var state = stateClient.GetStatesAsync(cep);
         
         }
         public void SimpleProcess(string link, string renavam, string placa)

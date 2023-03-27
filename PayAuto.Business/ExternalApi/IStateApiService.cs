@@ -11,7 +11,7 @@ namespace PayAuto.Business.ExternalApi
 {
     public interface IStateApiService
     {
-        [Get("/childrenJSON?geonameId=3469034")]
-        Task<StatesResponse> GetStatesAsync();
+        [Get("/ws/{cep}/json")]
+        Task<StatesResponse> GetStatesAsync(string cep);
     }
 }

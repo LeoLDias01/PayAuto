@@ -73,7 +73,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(9)))), ((int)(((byte)(47)))));
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(86)))));
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -90,7 +90,7 @@
             // 
             // btnMultipleSearch
             // 
-            this.btnMultipleSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(9)))), ((int)(((byte)(47)))));
+            this.btnMultipleSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(86)))));
             this.btnMultipleSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMultipleSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMultipleSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -117,7 +117,7 @@
             // 
             // btnSimpleSearch
             // 
-            this.btnSimpleSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(9)))), ((int)(((byte)(47)))));
+            this.btnSimpleSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(86)))));
             this.btnSimpleSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSimpleSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSimpleSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -140,8 +140,10 @@
             this.ClientSize = new System.Drawing.Size(303, 402);
             this.Controls.Add(this.lblSaudation);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.frmMenu_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

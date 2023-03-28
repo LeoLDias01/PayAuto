@@ -115,7 +115,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExternalApi\IStateApiService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\PayAutoGeneralService.cs" />
     <Compile Include="Services\PayAutoSPService.cs" />
@@ -142,6 +141,9 @@
     </PackageReference>
     <PackageReference Include="Refit">
       <Version>6.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="RestSharp">
+      <Version>109.0.1</Version>
     </PackageReference>
     <PackageReference Include="Selenium.WebDriver">
       <Version>4.8.1</Version>

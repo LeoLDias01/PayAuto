@@ -3,8 +3,9 @@
     "",
     "\\PayAuto",
     "\\PayAuto.Business",
-    "\\PayAuto.Business\\Services"
+    "\\PayAuto.Business\\Services",
+    "\\PayAuto\\Screens"
   ],
-  "SelectedNode": "\\PayAuto.Business\\Services\\PayAutoSPService.cs",
+  "SelectedNode": "\\PayAuto\\Screens\\frmSimpleSearch.cs",
   "PreviewInSolutionExplorer": false
 }

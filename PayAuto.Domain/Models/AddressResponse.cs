@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PayAuto.Domain.Models
 {
-    public class StatesResponse
+    public class AddressResponse
     {
         [JsonPropertyName("cep")]
         public string Cep { get; set; }

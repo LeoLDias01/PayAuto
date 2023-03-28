@@ -29,57 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSimpleSearch));
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnSimpleSearch = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblChassi = new System.Windows.Forms.Label();
             this.txtPlaca = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblPlaca = new System.Windows.Forms.Label();
             this.txtRenavam = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblRenavam = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCep = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSearchAddress = new System.Windows.Forms.Button();
+            this.gpbAddress = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbUf = new System.Windows.Forms.ComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gpbInfo = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.pnlRenavam = new System.Windows.Forms.Panel();
+            this.pnlPlaca = new System.Windows.Forms.Panel();
+            this.pnlChassi = new System.Windows.Forms.Panel();
+            this.txtChassi = new System.Windows.Forms.TextBox();
+            this.gpbAddress.SuspendLayout();
+            this.gpbInfo.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.pnlRenavam.SuspendLayout();
+            this.pnlPlaca.SuspendLayout();
+            this.pnlChassi.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(166, 341);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(396, 23);
-            this.txtEmail.TabIndex = 23;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(23, 340);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 20);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Informe seu e-mail";
             // 
             // btnSimpleSearch
             // 
@@ -90,24 +66,24 @@
             this.btnSimpleSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnSimpleSearch.ForeColor = System.Drawing.Color.White;
             this.btnSimpleSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSimpleSearch.Location = new System.Drawing.Point(17, 380);
+            this.btnSimpleSearch.Location = new System.Drawing.Point(14, 301);
             this.btnSimpleSearch.Name = "btnSimpleSearch";
-            this.btnSimpleSearch.Size = new System.Drawing.Size(545, 42);
+            this.btnSimpleSearch.Size = new System.Drawing.Size(271, 42);
             this.btnSimpleSearch.TabIndex = 21;
             this.btnSimpleSearch.Text = "Processar";
             this.btnSimpleSearch.UseVisualStyleBackColor = false;
             this.btnSimpleSearch.Click += new System.EventHandler(this.btnSimpleSearch_Click);
             // 
-            // label3
+            // lblChassi
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Chassi";
+            this.lblChassi.AutoSize = true;
+            this.lblChassi.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.lblChassi.ForeColor = System.Drawing.Color.White;
+            this.lblChassi.Location = new System.Drawing.Point(3, 11);
+            this.lblChassi.Name = "lblChassi";
+            this.lblChassi.Size = new System.Drawing.Size(51, 20);
+            this.lblChassi.TabIndex = 19;
+            this.lblChassi.Text = "Chassi";
             // 
             // txtPlaca
             // 
@@ -120,16 +96,16 @@
             this.txtPlaca.Size = new System.Drawing.Size(265, 23);
             this.txtPlaca.TabIndex = 18;
             // 
-            // label2
+            // lblPlaca
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 20);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Placa";
+            this.lblPlaca.AutoSize = true;
+            this.lblPlaca.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.lblPlaca.ForeColor = System.Drawing.Color.White;
+            this.lblPlaca.Location = new System.Drawing.Point(3, 11);
+            this.lblPlaca.Name = "lblPlaca";
+            this.lblPlaca.Size = new System.Drawing.Size(45, 20);
+            this.lblPlaca.TabIndex = 17;
+            this.lblPlaca.Text = "Placa";
             // 
             // txtRenavam
             // 
@@ -142,16 +118,16 @@
             this.txtRenavam.TabIndex = 16;
             this.txtRenavam.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRenavam_KeyPress);
             // 
-            // label1
+            // lblRenavam
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 20);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Renavam";
+            this.lblRenavam.AutoSize = true;
+            this.lblRenavam.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.lblRenavam.ForeColor = System.Drawing.Color.White;
+            this.lblRenavam.Location = new System.Drawing.Point(3, 11);
+            this.lblRenavam.Name = "lblRenavam";
+            this.lblRenavam.Size = new System.Drawing.Size(72, 20);
+            this.lblRenavam.TabIndex = 15;
+            this.lblRenavam.Text = "Renavam";
             // 
             // button1
             // 
@@ -162,9 +138,9 @@
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(16, 428);
+            this.button1.Location = new System.Drawing.Point(299, 300);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(546, 43);
+            this.button1.Size = new System.Drawing.Size(272, 43);
             this.button1.TabIndex = 24;
             this.button1.Text = "Ajuda";
             this.button1.UseVisualStyleBackColor = false;
@@ -199,41 +175,42 @@
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(244, 23);
             this.txtCep.TabIndex = 29;
+            this.txtCep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCep_KeyPress);
             // 
-            // button2
+            // btnSearchAddress
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnSearchAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::PayAuto.Properties.Resources.search_Dir__White_32x32;
-            this.button2.Location = new System.Drawing.Point(362, 30);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 34);
-            this.button2.TabIndex = 30;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnSearchAddress.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearchAddress.FlatAppearance.BorderSize = 0;
+            this.btnSearchAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchAddress.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSearchAddress.ForeColor = System.Drawing.Color.White;
+            this.btnSearchAddress.Image = global::PayAuto.Properties.Resources.search_Dir__White_32x32;
+            this.btnSearchAddress.Location = new System.Drawing.Point(362, 30);
+            this.btnSearchAddress.Name = "btnSearchAddress";
+            this.btnSearchAddress.Size = new System.Drawing.Size(36, 34);
+            this.btnSearchAddress.TabIndex = 30;
+            this.btnSearchAddress.UseVisualStyleBackColor = false;
+            this.btnSearchAddress.Click += new System.EventHandler(this.btnSearchAddress_Click);
             // 
-            // groupBox2
+            // gpbAddress
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.gpbAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.cmbUf);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txtCep);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(17, 28);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(554, 79);
-            this.groupBox2.TabIndex = 32;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Identificando Uf";
+            this.gpbAddress.Controls.Add(this.label5);
+            this.gpbAddress.Controls.Add(this.cmbUf);
+            this.gpbAddress.Controls.Add(this.label6);
+            this.gpbAddress.Controls.Add(this.txtCep);
+            this.gpbAddress.Controls.Add(this.btnSearchAddress);
+            this.gpbAddress.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.gpbAddress.ForeColor = System.Drawing.Color.White;
+            this.gpbAddress.Location = new System.Drawing.Point(17, 28);
+            this.gpbAddress.Name = "gpbAddress";
+            this.gpbAddress.Size = new System.Drawing.Size(554, 79);
+            this.gpbAddress.TabIndex = 32;
+            this.gpbAddress.TabStop = false;
+            this.gpbAddress.Text = "Identificando Uf";
             // 
             // label5
             // 
@@ -250,6 +227,9 @@
             // 
             this.cmbUf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbUf.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbUf.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbUf.BackColor = System.Drawing.Color.Gainsboro;
             this.cmbUf.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.cmbUf.FormattingEnabled = true;
             this.cmbUf.Items.AddRange(new object[] {
@@ -285,139 +265,123 @@
             this.cmbUf.Name = "cmbUf";
             this.cmbUf.Size = new System.Drawing.Size(100, 23);
             this.cmbUf.TabIndex = 31;
+            this.cmbUf.TextChanged += new System.EventHandler(this.cmbUf_TextChanged);
             // 
-            // groupBox3
+            // gpbInfo
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.gpbInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.flowLayoutPanel1);
-            this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(17, 113);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(554, 171);
-            this.groupBox3.TabIndex = 33;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Dados de Busca";
+            this.gpbInfo.Controls.Add(this.flowLayoutPanel1);
+            this.gpbInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.gpbInfo.ForeColor = System.Drawing.Color.White;
+            this.gpbInfo.Location = new System.Drawing.Point(17, 113);
+            this.gpbInfo.Name = "gpbInfo";
+            this.gpbInfo.Size = new System.Drawing.Size(554, 181);
+            this.gpbInfo.TabIndex = 33;
+            this.gpbInfo.TabStop = false;
+            this.gpbInfo.Text = "Dados de Busca";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Controls.Add(this.panel4);
+            this.flowLayoutPanel1.Controls.Add(this.pnlRenavam);
+            this.flowLayoutPanel1.Controls.Add(this.pnlPlaca);
+            this.flowLayoutPanel1.Controls.Add(this.pnlChassi);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 25);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(548, 143);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(548, 153);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // panel1
+            // pnlRenavam
             // 
-            this.panel1.Controls.Add(this.txtRenavam);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(265, 66);
-            this.panel1.TabIndex = 34;
+            this.pnlRenavam.Controls.Add(this.txtRenavam);
+            this.pnlRenavam.Controls.Add(this.lblRenavam);
+            this.pnlRenavam.Location = new System.Drawing.Point(3, 3);
+            this.pnlRenavam.Name = "pnlRenavam";
+            this.pnlRenavam.Size = new System.Drawing.Size(265, 66);
+            this.pnlRenavam.TabIndex = 34;
             // 
-            // panel3
+            // pnlPlaca
             // 
-            this.panel3.Controls.Add(this.txtPlaca);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(274, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(271, 66);
-            this.panel3.TabIndex = 35;
+            this.pnlPlaca.Controls.Add(this.txtPlaca);
+            this.pnlPlaca.Controls.Add(this.lblPlaca);
+            this.pnlPlaca.Location = new System.Drawing.Point(274, 3);
+            this.pnlPlaca.Name = "pnlPlaca";
+            this.pnlPlaca.Size = new System.Drawing.Size(271, 66);
+            this.pnlPlaca.TabIndex = 35;
             // 
-            // panel4
+            // pnlChassi
             // 
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(3, 75);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(265, 66);
-            this.panel4.TabIndex = 36;
+            this.pnlChassi.Controls.Add(this.txtChassi);
+            this.pnlChassi.Controls.Add(this.lblChassi);
+            this.pnlChassi.Location = new System.Drawing.Point(3, 75);
+            this.pnlChassi.Name = "pnlChassi";
+            this.pnlChassi.Size = new System.Drawing.Size(265, 66);
+            this.pnlChassi.TabIndex = 36;
             // 
-            // textBox2
+            // txtChassi
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtChassi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(4, 34);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(258, 23);
-            this.textBox2.TabIndex = 18;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.checkBox1.ForeColor = System.Drawing.Color.Orange;
-            this.checkBox1.Location = new System.Drawing.Point(27, 303);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(191, 24);
-            this.checkBox1.TabIndex = 34;
-            this.checkBox1.Text = "Enviar dados por e-mail";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.txtChassi.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtChassi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChassi.Location = new System.Drawing.Point(4, 34);
+            this.txtChassi.Name = "txtChassi";
+            this.txtChassi.Size = new System.Drawing.Size(258, 23);
+            this.txtChassi.TabIndex = 18;
             // 
             // frmSimpleSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(25)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(580, 483);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(580, 355);
+            this.Controls.Add(this.gpbInfo);
+            this.Controls.Add(this.gpbAddress);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSimpleSearch);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSimpleSearch";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSimpleSearch";
             this.Load += new System.EventHandler(this.frmSimpleSearch_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
+            this.gpbAddress.ResumeLayout(false);
+            this.gpbAddress.PerformLayout();
+            this.gpbInfo.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.pnlRenavam.ResumeLayout(false);
+            this.pnlRenavam.PerformLayout();
+            this.pnlPlaca.ResumeLayout(false);
+            this.pnlPlaca.PerformLayout();
+            this.pnlChassi.ResumeLayout(false);
+            this.pnlChassi.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnSimpleSearch;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblChassi;
         private System.Windows.Forms.TextBox txtPlaca;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblPlaca;
         private System.Windows.Forms.TextBox txtRenavam;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblRenavam;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCep;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnSearchAddress;
+        private System.Windows.Forms.GroupBox gpbAddress;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbUf;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gpbInfo;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Panel pnlRenavam;
+        private System.Windows.Forms.Panel pnlPlaca;
+        private System.Windows.Forms.Panel pnlChassi;
+        private System.Windows.Forms.TextBox txtChassi;
     }
 }

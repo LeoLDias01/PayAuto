@@ -57,6 +57,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDesc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDesc.Location = new System.Drawing.Point(161, 96);
+            this.txtDesc.MaxLength = 5000;
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(273, 23);
             this.txtDesc.TabIndex = 33;
@@ -79,6 +80,7 @@
             this.btnSend.TabIndex = 30;
             this.btnSend.Text = "Enviar";
             this.btnSend.UseVisualStyleBackColor = false;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // btnErase
             // 
@@ -96,6 +98,7 @@
             this.btnErase.TabIndex = 31;
             this.btnErase.Text = "Limpar";
             this.btnErase.UseVisualStyleBackColor = false;
+            this.btnErase.Click += new System.EventHandler(this.btnErase_Click);
             // 
             // label1
             // 

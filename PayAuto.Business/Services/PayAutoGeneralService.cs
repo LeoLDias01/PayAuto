@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.ConstrainedExecution;
 using System.Net.Http.Json;
+using System.Net.Mail;
 
 namespace PayAuto.Business.Services
 {
@@ -40,5 +41,34 @@ namespace PayAuto.Business.Services
             spService.DataInsert(renavam, placa);
             spService.Archives();
         }
+        public void MandaEmail(string emailToSend, string summary, string description, string ip, string hostname)
+        {
+            SmtpClient client = new SmtpClient("smtp.concilig.com.br");
+            client.Port = 587;
+            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            client.UseDefaultCredentials = false;
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("enviolembretes@concilig.com.br", "3nv10##1319");
+            client.EnableSsl = true;
+            client.Credentials = credentials;
+
+            try
+            {
+                var mail = new MailMessage();
+                mail.From = new System.Net.Mail.MailAddress("enviolembretes@concilig.com.br");
+                mail.To.Add(new System.Net.Mail.MailAddress(emailToSend));
+
+                mail.Subject = "PAYAUTO - USER REPORT";
+                mail.IsBodyHtml = true;
+                mail.Body = $"Olá o usuário {hostname} sob o ip: {ip} <br>Reportou algo. <br>Resumo: {summary} <br>Descrição: {description}";
+
+                client.Send(mail);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw ex;
+            }
+        }
+
     }
 }

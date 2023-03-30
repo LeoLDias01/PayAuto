@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSupport));
             this.label6 = new System.Windows.Forms.Label();
-            this.txtCep = new System.Windows.Forms.TextBox();
-            this.btnSimpleSearch = new System.Windows.Forms.Button();
-            this.btnClean = new System.Windows.Forms.Button();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.btnErase = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDetail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label6
@@ -45,80 +45,80 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 106);
+            this.label6.Location = new System.Drawing.Point(13, 96);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(142, 19);
             this.label6.TabIndex = 32;
             this.label6.Text = "Resumo do problema";
             // 
-            // txtCep
+            // txtDesc
             // 
-            this.txtCep.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCep.Location = new System.Drawing.Point(16, 128);
-            this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(418, 23);
-            this.txtCep.TabIndex = 33;
+            this.txtDesc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesc.Location = new System.Drawing.Point(161, 96);
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(273, 23);
+            this.txtDesc.TabIndex = 33;
             // 
-            // btnSimpleSearch
+            // btnSend
             // 
-            this.btnSimpleSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSimpleSearch.BackColor = System.Drawing.Color.DarkGreen;
-            this.btnSimpleSearch.Enabled = false;
-            this.btnSimpleSearch.FlatAppearance.BorderSize = 2;
-            this.btnSimpleSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
-            this.btnSimpleSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSimpleSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSimpleSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSimpleSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSimpleSearch.Location = new System.Drawing.Point(10, 378);
-            this.btnSimpleSearch.Name = "btnSimpleSearch";
-            this.btnSimpleSearch.Size = new System.Drawing.Size(206, 42);
-            this.btnSimpleSearch.TabIndex = 30;
-            this.btnSimpleSearch.Text = "Processar";
-            this.btnSimpleSearch.UseVisualStyleBackColor = false;
+            this.btnSend.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnSend.Enabled = false;
+            this.btnSend.FlatAppearance.BorderSize = 2;
+            this.btnSend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSend.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSend.ForeColor = System.Drawing.Color.White;
+            this.btnSend.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSend.Location = new System.Drawing.Point(10, 378);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(206, 42);
+            this.btnSend.TabIndex = 30;
+            this.btnSend.Text = "Enviar";
+            this.btnSend.UseVisualStyleBackColor = false;
             // 
-            // btnClean
+            // btnErase
             // 
-            this.btnClean.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnErase.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClean.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClean.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnClean.ForeColor = System.Drawing.Color.White;
-            this.btnClean.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClean.Location = new System.Drawing.Point(230, 378);
-            this.btnClean.Margin = new System.Windows.Forms.Padding(7, 10, 3, 3);
-            this.btnClean.Name = "btnClean";
-            this.btnClean.Size = new System.Drawing.Size(206, 42);
-            this.btnClean.TabIndex = 31;
-            this.btnClean.Text = "Limpar";
-            this.btnClean.UseVisualStyleBackColor = false;
+            this.btnErase.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnErase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnErase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnErase.ForeColor = System.Drawing.Color.White;
+            this.btnErase.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnErase.Location = new System.Drawing.Point(230, 378);
+            this.btnErase.Margin = new System.Windows.Forms.Padding(7, 10, 3, 3);
+            this.btnErase.Name = "btnErase";
+            this.btnErase.Size = new System.Drawing.Size(206, 42);
+            this.btnErase.TabIndex = 31;
+            this.btnErase.Text = "Limpar";
+            this.btnErase.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 159);
+            this.label1.Location = new System.Drawing.Point(12, 145);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 19);
             this.label1.TabIndex = 34;
             this.label1.Text = "Conte em detalhes o seu caso";
             // 
-            // textBox1
+            // txtDetail
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 181);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(422, 187);
-            this.textBox1.TabIndex = 35;
+            this.txtDetail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetail.Location = new System.Drawing.Point(12, 167);
+            this.txtDetail.Multiline = true;
+            this.txtDetail.Name = "txtDetail";
+            this.txtDetail.Size = new System.Drawing.Size(422, 201);
+            this.txtDetail.TabIndex = 35;
             // 
             // label2
             // 
@@ -131,27 +131,27 @@
             this.label2.TabIndex = 36;
             this.label2.Text = "Informe o seu e-mail";
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(16, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(420, 23);
-            this.textBox2.TabIndex = 37;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(162, 56);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(272, 23);
+            this.txtEmail.TabIndex = 37;
             // 
-            // label3
+            // lblTitle
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 30);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "CONTATO!";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.RoyalBlue;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(12, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(119, 30);
+            this.lblTitle.TabIndex = 38;
+            this.lblTitle.Text = "CONTATO!";
             // 
             // frmSupport
             // 
@@ -159,15 +159,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(25)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(448, 432);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDetail);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtCep);
-            this.Controls.Add(this.btnSimpleSearch);
-            this.Controls.Add(this.btnClean);
+            this.Controls.Add(this.txtDesc);
+            this.Controls.Add(this.btnSend);
+            this.Controls.Add(this.btnErase);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -182,13 +182,13 @@
         #endregion
 
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtCep;
-        private System.Windows.Forms.Button btnSimpleSearch;
-        private System.Windows.Forms.Button btnClean;
+        private System.Windows.Forms.TextBox txtDesc;
+        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.Button btnErase;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDetail;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label lblTitle;
     }
 }

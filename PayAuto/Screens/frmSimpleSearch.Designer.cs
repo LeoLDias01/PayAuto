@@ -49,8 +49,8 @@
             this.pnlChassi = new System.Windows.Forms.Panel();
             this.txtChassi = new System.Windows.Forms.TextBox();
             this.btnClean = new System.Windows.Forms.Button();
-            this.btnSearchAddress = new System.Windows.Forms.Button();
             this.lblExplanation = new System.Windows.Forms.Label();
+            this.btnSearchAddress = new System.Windows.Forms.Button();
             this.gpbAddress.SuspendLayout();
             this.gpbInfo.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -74,7 +74,7 @@
             this.btnSimpleSearch.Location = new System.Drawing.Point(314, 319);
             this.btnSimpleSearch.Name = "btnSimpleSearch";
             this.btnSimpleSearch.Size = new System.Drawing.Size(259, 42);
-            this.btnSimpleSearch.TabIndex = 21;
+            this.btnSimpleSearch.TabIndex = 7;
             this.btnSimpleSearch.Text = "Processar";
             this.btnSimpleSearch.UseVisualStyleBackColor = false;
             this.btnSimpleSearch.Click += new System.EventHandler(this.btnSimpleSearch_Click);
@@ -100,7 +100,7 @@
             this.txtPlaca.MaxLength = 9;
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(267, 23);
-            this.txtPlaca.TabIndex = 18;
+            this.txtPlaca.TabIndex = 5;
             // 
             // lblPlaca
             // 
@@ -122,7 +122,7 @@
             this.txtRenavam.MaxLength = 11;
             this.txtRenavam.Name = "txtRenavam";
             this.txtRenavam.Size = new System.Drawing.Size(267, 23);
-            this.txtRenavam.TabIndex = 16;
+            this.txtRenavam.TabIndex = 4;
             this.txtRenavam.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRenavam_KeyPress);
             // 
             // lblRenavam
@@ -150,7 +150,7 @@
             this.btnHelp.Location = new System.Drawing.Point(314, 372);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(259, 43);
-            this.btnHelp.TabIndex = 24;
+            this.btnHelp.TabIndex = 9;
             this.btnHelp.Text = "Suporte";
             this.btnHelp.UseVisualStyleBackColor = false;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
@@ -184,7 +184,7 @@
             this.txtCep.Location = new System.Drawing.Point(112, 39);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(246, 23);
-            this.txtCep.TabIndex = 29;
+            this.txtCep.TabIndex = 1;
             this.txtCep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCep_KeyPress);
             // 
             // gpbAddress
@@ -223,10 +223,13 @@
             this.cmbUf.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.cmbUf.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbUf.BackColor = System.Drawing.Color.Gainsboro;
+            this.cmbUf.DropDownHeight = 50;
             this.cmbUf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbUf.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.cmbUf.FormattingEnabled = true;
+            this.cmbUf.IntegralHeight = false;
+            this.cmbUf.ItemHeight = 15;
             this.cmbUf.Items.AddRange(new object[] {
             "<Selecione>",
             "AC",
@@ -259,7 +262,7 @@
             this.cmbUf.Location = new System.Drawing.Point(450, 38);
             this.cmbUf.Name = "cmbUf";
             this.cmbUf.Size = new System.Drawing.Size(97, 23);
-            this.cmbUf.TabIndex = 31;
+            this.cmbUf.TabIndex = 3;
             this.cmbUf.SelectedIndexChanged += new System.EventHandler(this.cmbUf_SelectedIndexChanged);
             // 
             // gpbInfo
@@ -334,7 +337,7 @@
             this.txtChassi.MaxLength = 17;
             this.txtChassi.Name = "txtChassi";
             this.txtChassi.Size = new System.Drawing.Size(267, 23);
-            this.txtChassi.TabIndex = 18;
+            this.txtChassi.TabIndex = 6;
             // 
             // btnClean
             // 
@@ -349,10 +352,21 @@
             this.btnClean.Margin = new System.Windows.Forms.Padding(7, 10, 3, 3);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(267, 39);
-            this.btnClean.TabIndex = 25;
+            this.btnClean.TabIndex = 8;
             this.btnClean.Text = "Limpar";
             this.btnClean.UseVisualStyleBackColor = false;
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
+            // 
+            // lblExplanation
+            // 
+            this.lblExplanation.AutoSize = true;
+            this.lblExplanation.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblExplanation.ForeColor = System.Drawing.Color.White;
+            this.lblExplanation.Location = new System.Drawing.Point(314, 138);
+            this.lblExplanation.Name = "lblExplanation";
+            this.lblExplanation.Size = new System.Drawing.Size(259, 152);
+            this.lblExplanation.TabIndex = 33;
+            this.lblExplanation.Text = resources.GetString("lblExplanation.Text");
             // 
             // btnSearchAddress
             // 
@@ -366,20 +380,9 @@
             this.btnSearchAddress.Location = new System.Drawing.Point(364, 30);
             this.btnSearchAddress.Name = "btnSearchAddress";
             this.btnSearchAddress.Size = new System.Drawing.Size(36, 34);
-            this.btnSearchAddress.TabIndex = 30;
+            this.btnSearchAddress.TabIndex = 2;
             this.btnSearchAddress.UseVisualStyleBackColor = false;
             this.btnSearchAddress.Click += new System.EventHandler(this.btnSearchAddress_Click);
-            // 
-            // lblExplanation
-            // 
-            this.lblExplanation.AutoSize = true;
-            this.lblExplanation.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblExplanation.ForeColor = System.Drawing.Color.White;
-            this.lblExplanation.Location = new System.Drawing.Point(314, 138);
-            this.lblExplanation.Name = "lblExplanation";
-            this.lblExplanation.Size = new System.Drawing.Size(259, 152);
-            this.lblExplanation.TabIndex = 33;
-            this.lblExplanation.Text = resources.GetString("lblExplanation.Text");
             // 
             // frmSimpleSearch
             // 

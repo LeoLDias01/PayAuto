@@ -19,14 +19,30 @@ namespace PayAuto.Screens
 {
     public partial class frmSimpleSearch : Form
     {
+        #region ..:: Instances ::..
+
+        // General Service Instance
         public PayAutoGeneralService generalService = new PayAutoGeneralService();
+
+        #endregion
+
+        #region ..:: Variables ::..
+
+        // Navigation link
         public string link;
+        // State Name for Combo Options Select
         public string stateName;
 
+        #endregion
+
+        #region ..:: Constructor ::..
         public frmSimpleSearch()
         {
             InitializeComponent();
         }
+        #endregion
+
+        #region ..:: Events ::..
 
         private void frmSimpleSearch_Load(object sender, EventArgs e)
         {
@@ -38,6 +54,43 @@ namespace PayAuto.Screens
                 StartProcess();
             
         }
+        private void txtRenavam_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            LockingNumberKey(e);
+        }
+        private void btnSearchAddress_Click(object sender, EventArgs e)
+        {
+            GetAddress();
+        }
+
+        private void txtCep_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            LockingNumberKey(e);
+        }
+        private void LockingNumberKey(KeyPressEventArgs eventArgs)
+        {
+            if (!char.IsControl(eventArgs.KeyChar) && !char.IsDigit(eventArgs.KeyChar) && (eventArgs.KeyChar != '.'))
+                eventArgs.Handled = true;
+        }
+        private void cmbUf_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbUf.SelectedIndex == 0)
+                SettingUsedComponents(renavam: false, placa: false, chassi: false, erase: false, process: false);
+            else
+                SettingStateDepartament();
+        }
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            Clean();
+        }
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            new frmSupport().Show();
+        }
+
+        #endregion
+
+        #region ..:: Methods ::..
         private void StartProcess()
         { 
             Task.Run(() =>
@@ -55,26 +108,7 @@ namespace PayAuto.Screens
                 return false;
             }
         }
-      
-        private void txtRenavam_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            LockingNumberKey(e);
-        }
-        private void btnSearchAddress_Click(object sender, EventArgs e)
-        {
-            SettingComboValue();
-        }
-
-        private void txtCep_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            LockingNumberKey(e);
-        }
-        private void LockingNumberKey(KeyPressEventArgs eventArgs)
-        {
-            if (!char.IsControl(eventArgs.KeyChar) && !char.IsDigit(eventArgs.KeyChar) && (eventArgs.KeyChar != '.'))
-                eventArgs.Handled = true;
-        }
-        private async Task SettingComboValue()
+        private async Task GetAddress()
         {
             await generalService.ApiGet(txtCep.Text);
             stateName = generalService.address.Uf.ToString();
@@ -147,14 +181,6 @@ namespace PayAuto.Screens
                 SettingUsedComponents(renavam: true, placa: true, chassi: false, erase: true, process: true);
             } 
         }
-
-        private void cmbUf_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(cmbUf.SelectedIndex == 0)
-                SettingUsedComponents(renavam: false, placa: false, chassi: false, erase: false, process: false);
-            else
-            SettingStateDepartament();
-        }
         private void SettingUsedComponents(bool renavam, bool placa, bool chassi, bool erase, bool process)
         {
             pnlRenavam.Visible  = renavam;
@@ -163,8 +189,7 @@ namespace PayAuto.Screens
             btnClean.Visible = erase;
             btnSimpleSearch.Enabled = process;
         }
-
-        private void btnClean_Click(object sender, EventArgs e)
+        private void Clean()
         {
             txtCep.Clear();
             cmbUf.SelectedIndex = 0;
@@ -172,10 +197,6 @@ namespace PayAuto.Screens
             txtPlaca.Clear();
             txtChassi.Clear();
         }
-
-        private void btnHelp_Click(object sender, EventArgs e)
-        {
-            new frmSupport().Show();
-        }
+        #endregion
     }
 }

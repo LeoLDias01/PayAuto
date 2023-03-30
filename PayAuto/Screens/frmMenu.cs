@@ -12,15 +12,33 @@ namespace PayAuto.Screens
 {
     public partial class frmMenu : Form
     {
+        #region ..:: Constructor ::..
+
         public frmMenu()
         {
             InitializeComponent();
         }
 
+        #endregion
+
+        #region ..:: Events ::..
+
         private void frmMenu_Load(object sender, EventArgs e)
         {
             ShowSaudation();
         }
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnSimpleSearch_Click(object sender, EventArgs e)
+        {
+            new frmSimpleSearch().ShowDialog();
+        }
+
+        #endregion
+
+        #region ..:: Methods ::..
         private void ShowSaudation()
         {
             if (DateTime.Now.Hour >= 6 && DateTime.Now.Hour < 12)
@@ -31,14 +49,6 @@ namespace PayAuto.Screens
                 lblSaudation.Text = "Olá! Boa noite, do que precisa?";
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnSimpleSearch_Click(object sender, EventArgs e)
-        {
-            new frmSimpleSearch().ShowDialog();
-        }
+        #endregion
     }
 }

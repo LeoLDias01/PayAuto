@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Net;
@@ -20,6 +21,7 @@ namespace PayAuto.Screens
     {
         public PayAutoGeneralService generalService = new PayAutoGeneralService();
         public string link;
+        public string stateName;
 
         public frmSimpleSearch()
         {
@@ -28,20 +30,20 @@ namespace PayAuto.Screens
 
         private void frmSimpleSearch_Load(object sender, EventArgs e)
         {
-            
+            cmbUf.SelectedIndex = 0;
         }
         private void btnSimpleSearch_Click(object sender, EventArgs e)
         {
             if (Validation())
-                StartProcess();    
+                StartProcess();
+            
         }
         private void StartProcess()
-        {
+        { 
             Task.Run(() =>
            {
                generalService.SimpleProcess(link: link, txtRenavam.Text.Trim(), txtPlaca.Text.Trim());
-
-           });
+           });    
         }
         private bool Validation()
         {
@@ -53,8 +55,7 @@ namespace PayAuto.Screens
                 return false;
             }
         }
-       
-
+      
         private void txtRenavam_KeyPress(object sender, KeyPressEventArgs e)
         {
             LockingNumberKey(e);
@@ -76,74 +77,105 @@ namespace PayAuto.Screens
         private async Task SettingComboValue()
         {
             await generalService.ApiGet(txtCep.Text);
-            cmbUf.SelectedText = generalService.address.Uf.ToString();
-            await SetStatesDep();  
+            stateName = generalService.address.Uf.ToString();
+            SelectState();
         }
-        private void cmbUf_TextChanged(object sender, EventArgs e)
+        private void SelectState()
         {
-           SetStatesDep();
+            if (stateName.Trim() == "SP")
+                cmbUf.SelectedIndex = 25;
+            else if (stateName.Trim() == "AC")
+                cmbUf.SelectedIndex = 1;
+            else if (stateName.Trim() == "AL")
+                cmbUf.SelectedIndex = 2;
+            else if (stateName.Trim() == "AP")
+                cmbUf.SelectedIndex = 3;
+            else if (stateName.Trim() == "AM")
+                cmbUf.SelectedIndex = 4;
+            else if (stateName.Trim() == "BA")
+                cmbUf.SelectedIndex = 5;
+            else if (stateName.Trim() == "CE")
+                cmbUf.SelectedIndex = 6;
+            else if (stateName.Trim() == "DF")
+                cmbUf.SelectedIndex = 7;
+            else if (stateName.Trim() == "ES")
+                cmbUf.SelectedIndex = 8;
+            else if (stateName.Trim() == "GO")
+                cmbUf.SelectedIndex = 9;
+            else if (stateName.Trim() == "MA")
+                cmbUf.SelectedIndex = 10;
+            else if (stateName.Trim() == "MT")
+                cmbUf.SelectedIndex = 11;
+            else if (stateName.Trim() == "MS")
+                cmbUf.SelectedIndex = 12;
+            else if (stateName.Trim() == "MG")
+                cmbUf.SelectedIndex = 13;
+            else if (stateName.Trim() == "PA")
+                cmbUf.SelectedIndex = 14;
+            else if (stateName.Trim() == "PB")
+                cmbUf.SelectedIndex = 15;
+            else if (stateName.Trim() == "PR")
+                cmbUf.SelectedIndex = 16;
+            else if (stateName.Trim() == "PE")
+                cmbUf.SelectedIndex = 17;
+            else if (stateName.Trim() == "PI")
+                cmbUf.SelectedIndex = 18;
+            else if (stateName.Trim() == "RJ")
+                cmbUf.SelectedIndex = 19;
+            else if (stateName.Trim() == "RN")
+                cmbUf.SelectedIndex = 20;
+            else if (stateName.Trim() == "RS")
+                cmbUf.SelectedIndex = 21;
+            else if (stateName.Trim() == "RO")
+                cmbUf.SelectedIndex = 22;
+            else if (stateName.Trim() == "RR")
+                cmbUf.SelectedIndex = 23;
+            else if (stateName.Trim() == "SC")
+                cmbUf.SelectedIndex = 24;
+            else if (stateName.Trim() == "SE")
+                cmbUf.SelectedIndex = 26;
+            else if (stateName.Trim() == "TO")
+                cmbUf.SelectedIndex = 27;
+            else
+                cmbUf.SelectedIndex = 0;
         }
-        private async Task SetStatesDep()
+        private void SettingStateDepartament()
         {
-            if (cmbUf.SelectedText == "SP")
+            if (cmbUf.SelectedIndex == 25)
             {
                 link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-                pnlChassi.Visible = false;
-            }
-            else if (cmbUf.SelectedText == "AC")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "AL")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "AP")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "AM")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "BA")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "CE")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "DF")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "ES")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "GO")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "MA")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "MT")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "MS")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "MG")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "PA")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "PB")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "PR")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "PE")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "PI")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "RJ")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "RN")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "RS")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "RO")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "RR")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "SC")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "SE")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
-            else if (cmbUf.SelectedText == "TO")
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
+                SettingUsedComponents(renavam: true, placa: true, chassi: false, erase: true, process: true);
+            } 
+        }
+
+        private void cmbUf_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cmbUf.SelectedIndex == 0)
+                SettingUsedComponents(renavam: false, placa: false, chassi: false, erase: false, process: false);
             else
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
+            SettingStateDepartament();
+        }
+        private void SettingUsedComponents(bool renavam, bool placa, bool chassi, bool erase, bool process)
+        {
+            pnlRenavam.Visible  = renavam;
+            pnlPlaca.Visible    = placa;
+            pnlChassi.Visible   = chassi;
+            btnClean.Visible = erase;
+            btnSimpleSearch.Enabled = process;
+        }
+
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            txtCep.Clear();
+            cmbUf.SelectedIndex = 0;
+            txtRenavam.Clear();
+            txtPlaca.Clear();
+            txtChassi.Clear();
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            new frmSupport().Show();
         }
     }
 }

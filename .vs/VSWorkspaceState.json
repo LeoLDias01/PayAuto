@@ -2,8 +2,6 @@
   "ExpandedNodes": [
     "",
     "\\PayAuto",
-    "\\PayAuto.Business",
-    "\\PayAuto.Business\\Services",
     "\\PayAuto\\Screens"
   ],
   "SelectedNode": "\\PayAuto\\Screens\\frmSimpleSearch.cs",

@@ -2382,11 +2382,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leonardoleal\\Source\\Repos\\PayAuto\\PayAuto.Business\\PayAuto.Business.csproj",
+      "projectUniqueName": "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Business\\PayAuto.Business.csproj",
       "projectName": "PayAuto.Business",
-      "projectPath": "C:\\Users\\leonardoleal\\Source\\Repos\\PayAuto\\PayAuto.Business\\PayAuto.Business.csproj",
+      "projectPath": "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Business\\PayAuto.Business.csproj",
       "packagesPath": "C:\\Users\\leonardoleal.CONCILIG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leonardoleal\\Source\\Repos\\PayAuto\\PayAuto.Business\\obj\\",
+      "outputPath": "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Business\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2407,11 +2407,11 @@
       "frameworks": {
         "net481": {
           "projectReferences": {
-            "C:\\Users\\leonardoleal\\Source\\Repos\\PayAuto\\PayAuto.Domain\\PayAuto.Domain.csproj": {
-              "projectPath": "C:\\Users\\leonardoleal\\Source\\Repos\\PayAuto\\PayAuto.Domain\\PayAuto.Domain.csproj"
+            "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Domain\\PayAuto.Domain.csproj": {
+              "projectPath": "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Domain\\PayAuto.Domain.csproj"
             },
-            "C:\\Users\\leonardoleal\\Source\\Repos\\PayAuto\\PayAuto.Selenium\\PayAuto.Selenium.csproj": {
-              "projectPath": "C:\\Users\\leonardoleal\\Source\\Repos\\PayAuto\\PayAuto.Selenium\\PayAuto.Selenium.csproj"
+            "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Selenium\\PayAuto.Selenium.csproj": {
+              "projectPath": "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Selenium\\PayAuto.Selenium.csproj"
             }
           }
         }

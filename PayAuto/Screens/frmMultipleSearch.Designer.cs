@@ -38,13 +38,13 @@
             this.txtArchiveLocation = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgvImport = new System.Windows.Forms.DataGridView();
-            this.btnHelp = new System.Windows.Forms.Button();
-            this.btnSimpleSearch = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.colRenavam = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPlaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colChassi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colState = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.btnSimpleSearch = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.gpbAddress.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImport)).BeginInit();
             this.SuspendLayout();
@@ -150,12 +150,42 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvImport.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvImport.RowHeadersVisible = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SkyBlue;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             this.dgvImport.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvImport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvImport.Size = new System.Drawing.Size(799, 285);
             this.dgvImport.TabIndex = 34;
+            // 
+            // colRenavam
+            // 
+            this.colRenavam.DataPropertyName = "Renavam";
+            this.colRenavam.HeaderText = "Renavam";
+            this.colRenavam.Name = "colRenavam";
+            this.colRenavam.ReadOnly = true;
+            // 
+            // colPlaca
+            // 
+            this.colPlaca.DataPropertyName = "LicensePlate";
+            this.colPlaca.HeaderText = "Placa";
+            this.colPlaca.Name = "colPlaca";
+            this.colPlaca.ReadOnly = true;
+            // 
+            // colChassi
+            // 
+            this.colChassi.DataPropertyName = "Chassi";
+            this.colChassi.HeaderText = "Chassi";
+            this.colChassi.Name = "colChassi";
+            this.colChassi.ReadOnly = true;
+            // 
+            // colState
+            // 
+            this.colState.DataPropertyName = "Uf";
+            this.colState.HeaderText = "Estado";
+            this.colState.Name = "colState";
+            this.colState.ReadOnly = true;
             // 
             // btnHelp
             // 
@@ -213,34 +243,6 @@
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // colRenavam
-            // 
-            this.colRenavam.DataPropertyName = "Renavam";
-            this.colRenavam.HeaderText = "Renavam";
-            this.colRenavam.Name = "colRenavam";
-            this.colRenavam.ReadOnly = true;
-            // 
-            // colPlaca
-            // 
-            this.colPlaca.DataPropertyName = "LicensePlate";
-            this.colPlaca.HeaderText = "Placa";
-            this.colPlaca.Name = "colPlaca";
-            this.colPlaca.ReadOnly = true;
-            // 
-            // colChassi
-            // 
-            this.colChassi.DataPropertyName = "Chassi";
-            this.colChassi.HeaderText = "Chassi";
-            this.colChassi.Name = "colChassi";
-            this.colChassi.ReadOnly = true;
-            // 
-            // colState
-            // 
-            this.colState.DataPropertyName = "Uf";
-            this.colState.HeaderText = "Estado";
-            this.colState.Name = "colState";
-            this.colState.ReadOnly = true;
-            // 
             // frmMultipleSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,6 +256,7 @@
             this.Controls.Add(this.gpbAddress);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMultipleSearch";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "..:: Busca em lote";
             this.gpbAddress.ResumeLayout(false);
             this.gpbAddress.PerformLayout();

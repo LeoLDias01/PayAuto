@@ -67,7 +67,6 @@ namespace PayAuto.Screens
         {
             new frmSupport().ShowDialog();
         }
-
         private void btnClear_Click(object sender, EventArgs e)
         {
             dgvImport.DataSource = null;

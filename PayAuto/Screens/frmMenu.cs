@@ -33,6 +33,7 @@ namespace PayAuto.Screens
         }
         private void btnSimpleSearch_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Consulta Disponível apenas para o estado de São Paulo \n Eventualmente será liberado para os demais estados", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             new frmSimpleSearch().ShowDialog();
         }
 

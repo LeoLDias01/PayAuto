@@ -64,3 +64,36 @@ C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Domain\obj\Debug\Pay
 C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Domain\obj\Debug\PayAuto.Domain.csproj.CopyComplete
 C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Domain\obj\Debug\PayAuto.Domain.dll
 C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Domain\obj\Debug\PayAuto.Domain.pdb
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\PayAuto.Domain.dll.config
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\PayAuto.Domain.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\PayAuto.Domain.pdb
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\PayAuto.Selenium.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Buffers.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Memory.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Text.Json.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.ValueTuple.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\WebDriver.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\WebDriver.Support.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\PayAuto.Selenium.pdb
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Buffers.xml
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Memory.xml
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Text.Json.xml
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\bin\Debug\System.ValueTuple.xml
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\obj\Debug\PayAuto.Domain.csproj.AssemblyReference.cache
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\obj\Debug\PayAuto.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\obj\Debug\PayAuto.Domain.csproj.CopyComplete
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\obj\Debug\PayAuto.Domain.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Domain\obj\Debug\PayAuto.Domain.pdb

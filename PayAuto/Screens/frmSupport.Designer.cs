@@ -67,7 +67,6 @@
             this.btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSend.BackColor = System.Drawing.Color.DarkGreen;
-            this.btnSend.Enabled = false;
             this.btnSend.FlatAppearance.BorderSize = 2;
             this.btnSend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -176,6 +175,7 @@
             this.MaximizeBox = false;
             this.Name = "frmSupport";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "..:: Suporte";
             this.ResumeLayout(false);
             this.PerformLayout();

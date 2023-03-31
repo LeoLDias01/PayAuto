@@ -17,8 +17,15 @@ namespace PayAuto.Business.Services
 {
     public class PayAutoGeneralService
     {
+        #region ..:: Instances ::..
         public PayAutoSPService spService = new PayAutoSPService();
+        #endregion
+
+        #region ..:: Variables ::..
         public AddressResponse address;
+        #endregion
+
+        #region ..:: API Call ::..
 
         public async Task ApiGet(string cep)
         {
@@ -34,6 +41,9 @@ namespace PayAuto.Business.Services
                 }
             }
         }
+        #endregion
+
+        #region ..:: Automation ::..
 
         public void SimpleProcess(string link, string renavam, string placa)
         {
@@ -41,27 +51,31 @@ namespace PayAuto.Business.Services
             spService.DataInsert(renavam, placa);
             spService.Archives();
         }
-        public void MandaEmail(string emailToSend, string summary, string description, string ip, string hostname)
+
+        #endregion
+
+        #region ..:: Mailer ::..
+        public void SendEmail(string emailToSend, string summary, string description, string ip, string hostname)
         {
-            SmtpClient client = new SmtpClient("smtp.concilig.com.br");
+            SmtpClient client = new SmtpClient("smtp-mail.outlook.com");
             client.Port = 587;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.UseDefaultCredentials = false;
-            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("enviolembretes@concilig.com.br", "3nv10##1319");
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("zpayautoma.disparos2023@outlook.com", "PayAuto@2023");
             client.EnableSsl = true;
             client.Credentials = credentials;
-
             try
             {
                 var mail = new MailMessage();
-                mail.From = new System.Net.Mail.MailAddress("enviolembretes@concilig.com.br");
+                mail.From = new System.Net.Mail.MailAddress("zpayautoma.disparos2023@outlook.com");
                 mail.To.Add(new System.Net.Mail.MailAddress(emailToSend));
 
                 mail.Subject = "PAYAUTO - USER REPORT";
                 mail.IsBodyHtml = true;
-                mail.Body = $"Olá o usuário {hostname} sob o ip: {ip} <br>Reportou algo. <br>Resumo: {summary} <br>Descrição: {description}";
+                mail.Body = $"Olá, <br>O usuário {hostname}<br>Sob o ip: {ip} <br>Reportou algo. <br>Resumo: {summary} <br>Descrição: {description}";
 
                 client.Send(mail);
+                MessageBox.Show("E-mail enviado", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -69,6 +83,6 @@ namespace PayAuto.Business.Services
                 throw ex;
             }
         }
-
+        #endregion
     }
 }

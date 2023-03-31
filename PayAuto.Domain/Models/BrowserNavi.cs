@@ -10,7 +10,7 @@ namespace PayAuto.Domain.Models
 {
     public static class BrowserNavi
     {
-        public static IWebBrowserBase Navegacao(this IWebBrowserBase webBrowser, string url)
+        public static IWebBrowserBase Navi(this IWebBrowserBase webBrowser, string url)
         {
 
             webBrowser.Navigate(url);
@@ -39,7 +39,7 @@ namespace PayAuto.Domain.Models
             return webBrowser;
         }
 
-        public static IWebBrowserBase GeraArquivoSp(this IWebBrowserBase webBrowser)
+        public static IWebBrowserBase GenerateArchive(this IWebBrowserBase webBrowser)
         {
 
             // Clicar no botão de impressão, aguardar nova janela abrir

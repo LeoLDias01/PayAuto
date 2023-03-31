@@ -60,3 +60,34 @@ C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Business\obj\Debug\P
 C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Business\obj\Debug\PayAuto.Business.csproj.CopyComplete
 C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Business\obj\Debug\PayAuto.Business.dll
 C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Business\obj\Debug\PayAuto.Business.pdb
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\PayAuto.Business.dll.config
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\PayAuto.Business.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\PayAuto.Business.pdb
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\Refit.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\RestSharp.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\WebDriver.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\System.Buffers.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\System.Memory.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\System.Net.Http.Json.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\System.Text.Json.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\System.ValueTuple.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\PayAuto.Domain.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\PayAuto.Selenium.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\WebDriver.Support.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\PayAuto.Domain.pdb
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\PayAuto.Domain.dll.config
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\bin\Debug\PayAuto.Selenium.pdb
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\obj\Debug\PayAuto.Business.csproj.AssemblyReference.cache
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\obj\Debug\PayAuto.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\obj\Debug\PayAuto.Business.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\obj\Debug\PayAuto.Business.csproj.CopyComplete
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\obj\Debug\PayAuto.Business.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Business\obj\Debug\PayAuto.Business.pdb

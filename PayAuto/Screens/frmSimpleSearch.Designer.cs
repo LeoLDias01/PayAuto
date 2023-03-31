@@ -42,6 +42,7 @@
             this.gpbAddress = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbUf = new System.Windows.Forms.ComboBox();
+            this.btnSearchAddress = new System.Windows.Forms.Button();
             this.gpbInfo = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlRenavam = new System.Windows.Forms.Panel();
@@ -50,7 +51,6 @@
             this.txtChassi = new System.Windows.Forms.TextBox();
             this.btnClean = new System.Windows.Forms.Button();
             this.lblExplanation = new System.Windows.Forms.Label();
-            this.btnSearchAddress = new System.Windows.Forms.Button();
             this.gpbAddress.SuspendLayout();
             this.gpbInfo.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -182,6 +182,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCep.Location = new System.Drawing.Point(112, 39);
+            this.txtCep.MaxLength = 11;
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(246, 23);
             this.txtCep.TabIndex = 1;
@@ -232,38 +233,28 @@
             this.cmbUf.ItemHeight = 15;
             this.cmbUf.Items.AddRange(new object[] {
             "<Selecione>",
-            "AC",
-            "AL",
-            "AP",
-            "AM",
-            "BA",
-            "CE",
-            "DF",
-            "ES",
-            "GO",
-            "MA",
-            "MT",
-            "MS",
-            "MG",
-            "PA",
-            "PB",
-            "PR",
-            "PE",
-            "PI",
-            "RJ",
-            "RN",
-            "RS",
-            "RO",
-            "RR",
-            "SC",
-            "SP",
-            "SE",
-            "TO"});
+            "SP"});
             this.cmbUf.Location = new System.Drawing.Point(450, 38);
             this.cmbUf.Name = "cmbUf";
             this.cmbUf.Size = new System.Drawing.Size(97, 23);
             this.cmbUf.TabIndex = 3;
             this.cmbUf.SelectedIndexChanged += new System.EventHandler(this.cmbUf_SelectedIndexChanged);
+            // 
+            // btnSearchAddress
+            // 
+            this.btnSearchAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearchAddress.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearchAddress.FlatAppearance.BorderSize = 0;
+            this.btnSearchAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchAddress.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSearchAddress.ForeColor = System.Drawing.Color.White;
+            this.btnSearchAddress.Image = global::PayAuto.Properties.Resources.search_Dir__White_32x32;
+            this.btnSearchAddress.Location = new System.Drawing.Point(364, 30);
+            this.btnSearchAddress.Name = "btnSearchAddress";
+            this.btnSearchAddress.Size = new System.Drawing.Size(36, 34);
+            this.btnSearchAddress.TabIndex = 2;
+            this.btnSearchAddress.UseVisualStyleBackColor = false;
+            this.btnSearchAddress.Click += new System.EventHandler(this.btnSearchAddress_Click);
             // 
             // gpbInfo
             // 
@@ -368,22 +359,6 @@
             this.lblExplanation.TabIndex = 33;
             this.lblExplanation.Text = resources.GetString("lblExplanation.Text");
             // 
-            // btnSearchAddress
-            // 
-            this.btnSearchAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearchAddress.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearchAddress.FlatAppearance.BorderSize = 0;
-            this.btnSearchAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchAddress.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSearchAddress.ForeColor = System.Drawing.Color.White;
-            this.btnSearchAddress.Image = global::PayAuto.Properties.Resources.search_Dir__White_32x32;
-            this.btnSearchAddress.Location = new System.Drawing.Point(364, 30);
-            this.btnSearchAddress.Name = "btnSearchAddress";
-            this.btnSearchAddress.Size = new System.Drawing.Size(36, 34);
-            this.btnSearchAddress.TabIndex = 2;
-            this.btnSearchAddress.UseVisualStyleBackColor = false;
-            this.btnSearchAddress.Click += new System.EventHandler(this.btnSearchAddress_Click);
-            // 
             // frmSimpleSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -398,6 +373,7 @@
             this.Controls.Add(this.btnSimpleSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmSimpleSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "..:: Busca Simples";

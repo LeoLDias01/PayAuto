@@ -23,11 +23,11 @@ namespace PayAuto.Business.Services
             try
             {
                 chrome.Driver.Manage().Window.Maximize();
-                chrome.Navegacao(link);
+                chrome.Navi(link);
             }
             catch
             {
-                MessageBox.Show("Nenhum dos browsers foi encontrado!");
+                MessageBox.Show("Chrome não encontrado!");
             }
         }
         public void DataInsert(string renavam, string placa)
@@ -38,12 +38,12 @@ namespace PayAuto.Business.Services
             }
             catch
             {
-
+                MessageBox.Show("Falha na automação, erro no preenchimento dos dados");
             }
         }
         public void Archives() 
         { 
-            chrome.GeraArquivoSp();
+            chrome.GenerateArchive();
         }
     }
 }

@@ -52,7 +52,7 @@ namespace PayAuto.Screens
         {
             if (Validation())
                 StartProcess();
-            
+            Clear();
         }
         private void txtRenavam_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -81,7 +81,7 @@ namespace PayAuto.Screens
         }
         private void btnClean_Click(object sender, EventArgs e)
         {
-            Clean();
+            Clear();
         }
         private void btnHelp_Click(object sender, EventArgs e)
         {
@@ -96,7 +96,8 @@ namespace PayAuto.Screens
             Task.Run(() =>
            {
                generalService.SimpleProcess(link: link, txtRenavam.Text.Trim(), txtPlaca.Text.Trim());
-           });    
+           });
+            MessageBox.Show("Processo finalizado");
         }
         private bool Validation()
         {
@@ -117,69 +118,19 @@ namespace PayAuto.Screens
         private void SelectState()
         {
             if (stateName.Trim() == "SP")
-                cmbUf.SelectedIndex = 25;
-            else if (stateName.Trim() == "AC")
                 cmbUf.SelectedIndex = 1;
-            else if (stateName.Trim() == "AL")
-                cmbUf.SelectedIndex = 2;
-            else if (stateName.Trim() == "AP")
-                cmbUf.SelectedIndex = 3;
-            else if (stateName.Trim() == "AM")
-                cmbUf.SelectedIndex = 4;
-            else if (stateName.Trim() == "BA")
-                cmbUf.SelectedIndex = 5;
-            else if (stateName.Trim() == "CE")
-                cmbUf.SelectedIndex = 6;
-            else if (stateName.Trim() == "DF")
-                cmbUf.SelectedIndex = 7;
-            else if (stateName.Trim() == "ES")
-                cmbUf.SelectedIndex = 8;
-            else if (stateName.Trim() == "GO")
-                cmbUf.SelectedIndex = 9;
-            else if (stateName.Trim() == "MA")
-                cmbUf.SelectedIndex = 10;
-            else if (stateName.Trim() == "MT")
-                cmbUf.SelectedIndex = 11;
-            else if (stateName.Trim() == "MS")
-                cmbUf.SelectedIndex = 12;
-            else if (stateName.Trim() == "MG")
-                cmbUf.SelectedIndex = 13;
-            else if (stateName.Trim() == "PA")
-                cmbUf.SelectedIndex = 14;
-            else if (stateName.Trim() == "PB")
-                cmbUf.SelectedIndex = 15;
-            else if (stateName.Trim() == "PR")
-                cmbUf.SelectedIndex = 16;
-            else if (stateName.Trim() == "PE")
-                cmbUf.SelectedIndex = 17;
-            else if (stateName.Trim() == "PI")
-                cmbUf.SelectedIndex = 18;
-            else if (stateName.Trim() == "RJ")
-                cmbUf.SelectedIndex = 19;
-            else if (stateName.Trim() == "RN")
-                cmbUf.SelectedIndex = 20;
-            else if (stateName.Trim() == "RS")
-                cmbUf.SelectedIndex = 21;
-            else if (stateName.Trim() == "RO")
-                cmbUf.SelectedIndex = 22;
-            else if (stateName.Trim() == "RR")
-                cmbUf.SelectedIndex = 23;
-            else if (stateName.Trim() == "SC")
-                cmbUf.SelectedIndex = 24;
-            else if (stateName.Trim() == "SE")
-                cmbUf.SelectedIndex = 26;
-            else if (stateName.Trim() == "TO")
-                cmbUf.SelectedIndex = 27;
             else
                 cmbUf.SelectedIndex = 0;
         }
         private void SettingStateDepartament()
         {
-            if (cmbUf.SelectedIndex == 25)
+            if (cmbUf.SelectedIndex == 1)
             {
                 link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
                 SettingUsedComponents(renavam: true, placa: true, chassi: false, erase: true, process: true);
             } 
+            else
+                MessageBox.Show("Consulta Disponível apenas para o estado de São Paulo \n Eventualmente será liberado para os demais estados", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         private void SettingUsedComponents(bool renavam, bool placa, bool chassi, bool erase, bool process)
         {
@@ -189,7 +140,7 @@ namespace PayAuto.Screens
             btnClean.Visible = erase;
             btnSimpleSearch.Enabled = process;
         }
-        private void Clean()
+        private void Clear()
         {
             txtCep.Clear();
             cmbUf.SelectedIndex = 0;

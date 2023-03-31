@@ -24,3 +24,16 @@ C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Selenium\obj\Debug\P
 C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.csproj.CopyComplete
 C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.dll
 C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.pdb
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\PayAuto.Selenium.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\PayAuto.Selenium.pdb
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\WebDriver.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\bin\Debug\WebDriver.Support.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.csproj.AssemblyReference.cache
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.csproj.CopyComplete
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.dll
+C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto.Selenium\obj\Debug\PayAuto.Selenium.pdb

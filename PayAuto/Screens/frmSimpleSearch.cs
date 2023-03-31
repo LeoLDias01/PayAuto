@@ -52,7 +52,6 @@ namespace PayAuto.Screens
         {
             if (Validation())
                 StartProcess();
-            Clear();
         }
         private void txtRenavam_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -95,9 +94,8 @@ namespace PayAuto.Screens
         { 
             Task.Run(() =>
            {
-               generalService.SimpleProcess(link: link, txtRenavam.Text.Trim(), txtPlaca.Text.Trim());
+               generalService.SimpleProcess(link: link, txtRenavam.Text, txtPlaca.Text);
            });
-            MessageBox.Show("Processo finalizado");
         }
         private bool Validation()
         {

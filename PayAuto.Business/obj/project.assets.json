@@ -2376,24 +2376,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leonardo Leal\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\leonardoleal.CONCILIG\\.nuget\\packages\\": {},
+    "D:\\VisualStudio\\SDK\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leonardo Leal\\Source\\Repos\\PayAuto\\PayAuto.Business\\PayAuto.Business.csproj",
+      "projectUniqueName": "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Business\\PayAuto.Business.csproj",
       "projectName": "PayAuto.Business",
-      "projectPath": "C:\\Users\\Leonardo Leal\\Source\\Repos\\PayAuto\\PayAuto.Business\\PayAuto.Business.csproj",
-      "packagesPath": "C:\\Users\\Leonardo Leal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leonardo Leal\\Source\\Repos\\PayAuto\\PayAuto.Business\\obj\\",
+      "projectPath": "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Business\\PayAuto.Business.csproj",
+      "packagesPath": "C:\\Users\\leonardoleal.CONCILIG\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Business\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\VisualStudio\\SDK\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Leonardo Leal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leonardoleal.CONCILIG\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2407,11 +2407,11 @@
       "frameworks": {
         "net481": {
           "projectReferences": {
-            "C:\\Users\\Leonardo Leal\\Source\\Repos\\PayAuto\\PayAuto.Domain\\PayAuto.Domain.csproj": {
-              "projectPath": "C:\\Users\\Leonardo Leal\\Source\\Repos\\PayAuto\\PayAuto.Domain\\PayAuto.Domain.csproj"
+            "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Domain\\PayAuto.Domain.csproj": {
+              "projectPath": "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Domain\\PayAuto.Domain.csproj"
             },
-            "C:\\Users\\Leonardo Leal\\Source\\Repos\\PayAuto\\PayAuto.Selenium\\PayAuto.Selenium.csproj": {
-              "projectPath": "C:\\Users\\Leonardo Leal\\Source\\Repos\\PayAuto\\PayAuto.Selenium\\PayAuto.Selenium.csproj"
+            "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Selenium\\PayAuto.Selenium.csproj": {
+              "projectPath": "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Selenium\\PayAuto.Selenium.csproj"
             }
           }
         }

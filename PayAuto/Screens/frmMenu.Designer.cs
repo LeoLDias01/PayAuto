@@ -112,6 +112,7 @@
             this.btnMultipleSearch.TabIndex = 2;
             this.btnMultipleSearch.Text = "Consulta em Lote";
             this.btnMultipleSearch.UseVisualStyleBackColor = false;
+            this.btnMultipleSearch.Click += new System.EventHandler(this.btnMultipleSearch_Click);
             // 
             // pictureBox1
             // 

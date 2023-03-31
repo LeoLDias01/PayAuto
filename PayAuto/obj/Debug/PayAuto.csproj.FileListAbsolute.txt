@@ -132,3 +132,18 @@ C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.csproj.Cor
 C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.csproj.CopyComplete
 C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.exe
 C:\Users\Leonardo Leal\Source\Repos\PayAuto\PayAuto\obj\Debug\PayAuto.pdb
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\obj\Debug\PayAuto.Screens.frmMultipleSearch.resources
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\ClosedXML.dll
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\ExcelNumberFormat.dll
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\Irony.dll
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\SixLabors.Fonts.dll
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\System.IO.Packaging.dll
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\XLParser.dll
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\ClosedXML.xml
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\ExcelNumberFormat.xml
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\SixLabors.Fonts.xml
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\System.Buffers.xml
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\System.IO.Packaging.xml
+C:\Users\leonardoleal.CONCILIG\source\repos\PayAuto\PayAuto\bin\Debug\System.Memory.xml

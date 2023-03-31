@@ -36,6 +36,10 @@ namespace PayAuto.Screens
             MessageBox.Show("Consulta Disponível apenas para o estado de São Paulo \n Eventualmente será liberado para os demais estados", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             new frmSimpleSearch().ShowDialog();
         }
+        private void btnMultipleSearch_Click(object sender, EventArgs e)
+        {
+            new frmMultipleSearch().ShowDialog();
+        }
 
         #endregion
 
@@ -51,5 +55,6 @@ namespace PayAuto.Screens
         }
 
         #endregion
+
     }
 }

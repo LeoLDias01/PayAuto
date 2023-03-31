@@ -77,6 +77,7 @@
   <ItemGroup>
     <Compile Include="Models\BrowserNavi.cs" />
     <Compile Include="Models\AddressResponse.cs" />
+    <Compile Include="Models\WorksheetRows.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

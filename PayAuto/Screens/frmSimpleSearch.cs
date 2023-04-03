@@ -28,8 +28,6 @@ namespace PayAuto.Screens
 
         #region ..:: Variables ::..
 
-        // Navigation link
-        public string link;
         // State Name for Combo Options Select
         public string stateName;
 
@@ -91,15 +89,18 @@ namespace PayAuto.Screens
 
         #region ..:: Methods ::..
         private void StartProcess()
-        { 
+        {
+            States states  = StateSelected();
+
             Task.Run(() =>
            {
-               generalService.SimpleProcess(link: link, txtRenavam.Text, txtPlaca.Text);
+               generalService.SimpleProcess(txtRenavam.Text, txtPlaca.Text, states);
+                   
            });
         }
         private bool Validation()
         {
-            if (txtRenavam.TextLength > 9 && txtPlaca.TextLength > 5 && link != string.Empty)
+            if (txtRenavam.TextLength > 9 && txtPlaca.TextLength > 5)
                 return true;
             else
             {
@@ -123,10 +124,8 @@ namespace PayAuto.Screens
         private void SettingStateDepartament()
         {
             if (cmbUf.SelectedIndex == 1)
-            {
-                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
                 SettingUsedComponents(renavam: true, placa: true, chassi: false, erase: true, process: true);
-            } 
+             
             else
                 MessageBox.Show("Consulta Disponível apenas para o estado de São Paulo \n Eventualmente será liberado para os demais estados", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
@@ -145,6 +144,14 @@ namespace PayAuto.Screens
             txtRenavam.Clear();
             txtPlaca.Clear();
             txtChassi.Clear();
+        }
+
+        private States StateSelected()
+        {
+            if (cmbUf.SelectedIndex == 1)
+                return States.SP;
+            else
+                return States.SP;
         }
         #endregion
     }

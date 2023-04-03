@@ -1,5 +1,6 @@
 ﻿using ClosedXML.Excel;
 using DocumentFormat.OpenXml.Spreadsheet;
+using PayAuto.Business.Services;
 using PayAuto.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,8 @@ namespace PayAuto.Screens
     public partial class frmMultipleSearch : Form
     {
         public List<WorksheetRows> worksheetRows = new List<WorksheetRows>();
+        public PayAutoGeneralService generalService = new PayAutoGeneralService();
+
         public frmMultipleSearch()
         {
             InitializeComponent();
@@ -37,7 +40,6 @@ namespace PayAuto.Screens
             var xls = new XLWorkbook(location);
             var worksheet = xls.Worksheets.First(w => w.Name == "Planilha1");
             var totalRows = worksheet.Rows().Count();
-
 
             // The first line is used to header
             for (int line = 2; line <= totalRows; line++)
@@ -62,6 +64,10 @@ namespace PayAuto.Screens
             dgvImport.DataSource = null;
             dgvImport.AutoGenerateColumns = false;
             dgvImport.DataSource = worksheetRows;
+            if (dgvImport.Rows.Count < 1)
+                btnMultSearch.Enabled = false;
+            else
+                btnMultSearch.Enabled = true;
         }
         private void btnHelp_Click(object sender, EventArgs e)
         {
@@ -72,6 +78,17 @@ namespace PayAuto.Screens
             dgvImport.DataSource = null;
             txtArchiveLocation.Clear();
             worksheetRows = null;
+        }
+
+        private void btnMultSearch_Click(object sender, EventArgs e)
+        {
+            foreach (var item in worksheetRows)
+            {
+                if (item.Uf == "SP")
+                    generalService.MultipleProcess(item.Renavam.ToString(), item.LicensePlate, States.SP);
+                else
+                    MessageBox.Show("UF Inválida, favor utilizar as uf's Disponíveis", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

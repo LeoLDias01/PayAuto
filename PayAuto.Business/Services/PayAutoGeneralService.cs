@@ -39,17 +39,41 @@ namespace PayAuto.Business.Services
                 {
                     address = await response.Content.ReadFromJsonAsync<AddressResponse>();
                 }
+                else
+                    MessageBox.Show("Erro da API");
             }
         }
         #endregion
 
         #region ..:: Automation ::..
 
-        public void SimpleProcess(string link, string renavam, string placa)
+        public void SimpleProcess(string renavam, string licensePlate, States states)
         {
-            spService.Start(link);
-            spService.DataInsert(renavam, placa);
-            spService.Archives();
+            if (states == States.SP)
+            {
+                spService.Start(GetStateLink(states));
+                spService.DataInsert(renavam, licensePlate);
+                spService.Archives();
+            }
+        }
+        public void MultipleProcess(string renavam, string licensePlate, States states)
+        {
+            if (states == States.SP)
+            {
+                spService.Start(GetStateLink(states));
+                spService.DataInsert(renavam, licensePlate);
+                spService.Archives();
+            }
+        }
+        public string GetStateLink(States states)
+        {
+            string link;
+            if (states == States.SP)
+                link = "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx";
+            else
+                link = "";
+
+            return link;
         }
 
         #endregion

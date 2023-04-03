@@ -43,7 +43,7 @@
             this.colChassi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colState = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnHelp = new System.Windows.Forms.Button();
-            this.btnSimpleSearch = new System.Windows.Forms.Button();
+            this.btnMultSearch = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.gpbAddress.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImport)).BeginInit();
@@ -206,24 +206,24 @@
             this.btnHelp.UseVisualStyleBackColor = false;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
-            // btnSimpleSearch
+            // btnMultSearch
             // 
-            this.btnSimpleSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnMultSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSimpleSearch.BackColor = System.Drawing.Color.DarkGreen;
-            this.btnSimpleSearch.Enabled = false;
-            this.btnSimpleSearch.FlatAppearance.BorderSize = 2;
-            this.btnSimpleSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
-            this.btnSimpleSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSimpleSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSimpleSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSimpleSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSimpleSearch.Location = new System.Drawing.Point(12, 396);
-            this.btnSimpleSearch.Name = "btnSimpleSearch";
-            this.btnSimpleSearch.Size = new System.Drawing.Size(259, 42);
-            this.btnSimpleSearch.TabIndex = 35;
-            this.btnSimpleSearch.Text = "Processar";
-            this.btnSimpleSearch.UseVisualStyleBackColor = false;
+            this.btnMultSearch.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnMultSearch.FlatAppearance.BorderSize = 2;
+            this.btnMultSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btnMultSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMultSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMultSearch.ForeColor = System.Drawing.Color.White;
+            this.btnMultSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMultSearch.Location = new System.Drawing.Point(12, 396);
+            this.btnMultSearch.Name = "btnMultSearch";
+            this.btnMultSearch.Size = new System.Drawing.Size(259, 42);
+            this.btnMultSearch.TabIndex = 35;
+            this.btnMultSearch.Text = "Processar";
+            this.btnMultSearch.UseVisualStyleBackColor = false;
+            this.btnMultSearch.Click += new System.EventHandler(this.btnMultSearch_Click);
             // 
             // btnClear
             // 
@@ -251,7 +251,7 @@
             this.ClientSize = new System.Drawing.Size(823, 450);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnHelp);
-            this.Controls.Add(this.btnSimpleSearch);
+            this.Controls.Add(this.btnMultSearch);
             this.Controls.Add(this.dgvImport);
             this.Controls.Add(this.gpbAddress);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -273,7 +273,7 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dgvImport;
         private System.Windows.Forms.Button btnHelp;
-        private System.Windows.Forms.Button btnSimpleSearch;
+        private System.Windows.Forms.Button btnMultSearch;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRenavam;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPlaca;

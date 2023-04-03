@@ -29,11 +29,12 @@ namespace PayAuto.Screens
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
+            // Exiting the application
             Application.Exit();
         }
         private void btnSimpleSearch_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Consulta Disponível apenas para o estado de São Paulo \n Eventualmente será liberado para os demais estados", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("CONSULTA DISPONÍVEL APENAS PARA 'SP'", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             new frmSimpleSearch().ShowDialog();
         }
         private void btnMultipleSearch_Click(object sender, EventArgs e)
@@ -44,6 +45,10 @@ namespace PayAuto.Screens
         #endregion
 
         #region ..:: Methods ::..
+
+        /// <summary>
+        /// Showing saudation based on time
+        /// </summary>
         private void ShowSaudation()
         {
             if (DateTime.Now.Hour >= 6 && DateTime.Now.Hour < 12)

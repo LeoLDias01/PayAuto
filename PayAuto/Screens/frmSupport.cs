@@ -38,19 +38,33 @@ namespace PayAuto.Screens
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            // Set wait cursor
             Cursor = Cursors.WaitCursor;
+            // Disabling form
             this.Enabled = false;
+            // Taking Ip based on Hostname
             IPAddress[] ip = Dns.GetHostAddresses(Dns.GetHostName());
+
+            // Email valuex is correct, we send a e-mail
             if (Validation())
                 generalService.SendEmail(emailToSend: txtEmail.Text.Trim(), summary: txtDesc.Text, description: txtDetail.Text, ip: ip[1].ToString(), hostname: Dns.GetHostName().ToString());
+            
+            // Set Default cursor
             Cursor = Cursors.Default;
+            //Enable form
             this.Enabled = true;
+            // Cleaning fields
             Clear();
         }
 
         #endregion
 
         #region ..:: General Methods ::..
+
+        /// <summary>
+        /// Validating email, if corresponds the regex
+        /// </summary>
+        /// <returns></returns>
         private bool Validation()
         {
             Regex regexEmail = new Regex(@"^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$");
@@ -71,6 +85,10 @@ namespace PayAuto.Screens
                 return false;
             }
         }
+
+        /// <summary>
+        /// Cleaning TextBox
+        /// </summary>
         private void Clear()
         {
             txtEmail.Clear();

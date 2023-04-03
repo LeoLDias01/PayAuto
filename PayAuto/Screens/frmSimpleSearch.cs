@@ -44,10 +44,12 @@ namespace PayAuto.Screens
 
         private void frmSimpleSearch_Load(object sender, EventArgs e)
         {
+            // Setting combo value to default
             cmbUf.SelectedIndex = 0;
         }
         private void btnSimpleSearch_Click(object sender, EventArgs e)
         {
+            // Verifying fields and starting process 
             if (Validation())
                 StartProcess();
         }
@@ -71,8 +73,9 @@ namespace PayAuto.Screens
         }
         private void cmbUf_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Disable fields based on state
             if (cmbUf.SelectedIndex == 0)
-                SettingUsedComponents(renavam: false, placa: false, chassi: false, erase: false, process: false);
+                SettingUsedComponents(renavam: false, licensePlate: false, chassi: false, erase: false, process: false);
             else
                 SettingStateDepartament();
         }
@@ -108,12 +111,21 @@ namespace PayAuto.Screens
                 return false;
             }
         }
+
+        /// <summary>
+        /// Taking data from API
+        /// </summary>
+        /// <returns></returns>
         private async Task GetAddress()
         {
             await generalService.ApiGet(txtCep.Text);
             stateName = generalService.address.Uf.ToString();
             SelectState();
         }
+
+        /// <summary>
+        /// State Select based on Api return
+        /// </summary>
         private void SelectState()
         {
             if (stateName.Trim() == "SP")
@@ -121,22 +133,38 @@ namespace PayAuto.Screens
             else
                 cmbUf.SelectedIndex = 0;
         }
+        /// <summary>
+        /// Fields enable
+        /// </summary>
         private void SettingStateDepartament()
         {
             if (cmbUf.SelectedIndex == 1)
-                SettingUsedComponents(renavam: true, placa: true, chassi: false, erase: true, process: true);
+                SettingUsedComponents(renavam: true, licensePlate: true, chassi: false, erase: true, process: true);
              
             else
                 MessageBox.Show("Consulta Disponível apenas para o estado de São Paulo \n Eventualmente será liberado para os demais estados", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
-        private void SettingUsedComponents(bool renavam, bool placa, bool chassi, bool erase, bool process)
+
+        /// <summary>
+        /// Using parameters to set values to enable fields
+        /// </summary>
+        /// <param name="renavam"></param>
+        /// <param name="licensePlate"></param>
+        /// <param name="chassi"></param>
+        /// <param name="erase"></param>
+        /// <param name="process"></param>
+        private void SettingUsedComponents(bool renavam, bool licensePlate, bool chassi, bool erase, bool process)
         {
             pnlRenavam.Visible  = renavam;
-            pnlPlaca.Visible    = placa;
+            pnlPlaca.Visible    = licensePlate;
             pnlChassi.Visible   = chassi;
             btnClean.Visible = erase;
             btnSimpleSearch.Enabled = process;
         }
+
+        /// <summary>
+        /// Cleaning fields
+        /// </summary>
         private void Clear()
         {
             txtCep.Clear();
@@ -145,7 +173,6 @@ namespace PayAuto.Screens
             txtPlaca.Clear();
             txtChassi.Clear();
         }
-
         private States StateSelected()
         {
             if (cmbUf.SelectedIndex == 1)

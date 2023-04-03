@@ -211,6 +211,7 @@
             this.btnMultSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMultSearch.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnMultSearch.Enabled = false;
             this.btnMultSearch.FlatAppearance.BorderSize = 2;
             this.btnMultSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btnMultSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

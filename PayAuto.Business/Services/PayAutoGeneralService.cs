@@ -27,6 +27,11 @@ namespace PayAuto.Business.Services
 
         #region ..:: API Call ::..
 
+        /// <summary>
+        /// Getting Api Values based on Cep Parameter cep
+        /// </summary>
+        /// <param name="cep"></param>
+        /// <returns></returns>
         public async Task ApiGet(string cep)
         {
             using (var client = new HttpClient())
@@ -46,25 +51,49 @@ namespace PayAuto.Business.Services
         #endregion
 
         #region ..:: Automation ::..
-
+        /// <summary>
+        ///  Just one search 
+        /// </summary>
+        /// <param name="renavam"></param>
+        /// <param name="licensePlate"></param>
+        /// <param name="states"></param>
         public void SimpleProcess(string renavam, string licensePlate, States states)
         {
             if (states == States.SP)
             {
+                // Opening the link
                 spService.Start(GetStateLink(states));
+                // Insert values on fields 
                 spService.DataInsert(renavam, licensePlate);
+                // Action to start a download
                 spService.Archives();
             }
         }
+
+        /// <summary>
+        /// Search based on achive rows 
+        /// </summary>
+        /// <param name="renavam"></param>
+        /// <param name="licensePlate"></param>
+        /// <param name="states"></param>
         public void MultipleProcess(string renavam, string licensePlate, States states)
         {
             if (states == States.SP)
             {
+                // Opening the link
                 spService.Start(GetStateLink(states));
+                // Insert values on fields 
                 spService.DataInsert(renavam, licensePlate);
+                // Action to start a download
                 spService.Archives();
             }
         }
+
+        /// <summary>
+        /// state discover
+        /// </summary>
+        /// <param name="states"></param>
+        /// <returns></returns>
         public string GetStateLink(States states)
         {
             string link;
@@ -79,6 +108,15 @@ namespace PayAuto.Business.Services
         #endregion
 
         #region ..:: Mailer ::..
+
+        /// <summary>
+        /// Sending mail
+        /// </summary>
+        /// <param name="emailToSend"></param>
+        /// <param name="summary"></param>
+        /// <param name="description"></param>
+        /// <param name="ip"></param>
+        /// <param name="hostname"></param>
         public void SendEmail(string emailToSend, string summary, string description, string ip, string hostname)
         {
             SmtpClient client = new SmtpClient("smtp-mail.outlook.com");

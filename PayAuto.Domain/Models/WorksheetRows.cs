@@ -8,7 +8,7 @@ namespace PayAuto.Domain.Models
 {
     public struct WorksheetRows
     {
-        public long Renavam { get; set; }
+        public string Renavam { get; set; }
         public string LicensePlate { get; set; }
         public string Chassi { get; set; }
         public string Uf { get; set; }

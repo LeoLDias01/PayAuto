@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FlnyudVBTZYyZqRNS1h/xT7rnPpKMkeZZckBc5QArmuFMlNFsN5x6HxcgHUsHN7KgmOj7BL8oB1xeXE4uy8e+g==",
+  "dgSpecHash": "qevKK7MqXeSXLf39osDdiXy0Vq0dE0jf1ybhwpro69Y1G+9LNZYtTH66NtdNGhSktfShpOH+jhm8sxHnnh7G6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leonardoleal.CONCILIG\\Source\\Repos\\PayAuto\\PayAuto.Business\\PayAuto.Business.csproj",
+  "projectFilePath": "C:\\Users\\leonardoleal.CONCILIG\\source\\repos\\PayAuto\\PayAuto.Business\\PayAuto.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leonardoleal.CONCILIG\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\leonardoleal.CONCILIG\\.nuget\\packages\\refit\\6.3.2\\refit.6.3.2.nupkg.sha512",

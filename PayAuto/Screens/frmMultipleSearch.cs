@@ -86,14 +86,14 @@ namespace PayAuto.Screens
                 try
                 {
                     // Setting values 
-                    var renavam = long.Parse(worksheet.Cell($"A{line}").Value.ToString());
+                    var renavam = worksheet.Cell($"A{line}").Value.ToString();
                     var licensePlate = worksheet.Cell($"B{line}").Value.ToString();
                     var chassi = worksheet.Cell($"C{line}").Value.ToString();
                     var uf = worksheet.Cell($"D{line}").Value.ToString();
-                    worksheetRows.Add(new WorksheetRows() { Renavam = renavam,
-                                                            LicensePlate = licensePlate,
-                                                            Chassi = chassi,
-                                                            Uf = uf});
+                    worksheetRows.Add(new WorksheetRows() { Renavam = renavam.Trim(),
+                                                            LicensePlate = licensePlate.Trim(),
+                                                            Chassi = chassi.Trim(),
+                                                            Uf = uf.Trim()});
                 }
                 catch 
                 {
